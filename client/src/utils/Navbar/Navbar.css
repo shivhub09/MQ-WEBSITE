@@ -1,0 +1,132 @@
+/* Existing styles */
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  }
+  
+  .logo-container {
+    margin-right: auto;
+  }
+  
+  .logo-container img {
+    height: 20px; 
+  }
+  
+  .navbar-content {
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    transform: translateX(100%); /* Initially off-screen to the right */
+    position: fixed; /* Make the drawer fixed so it doesn't push the content */
+    right: 0;
+    top: 0;
+    height: 100%;
+    background-color: white;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    z-index: 10;
+  }
+  
+  .navbar-content.open {
+    transform: translateX(0); /* Slide in the drawer */
+  }
+  
+  .navbar-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: left;
+  }
+  
+  .navbar-list .list-item {
+    margin: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+  }
+  
+  .navbar-list .list-item:hover {
+    color: #007bff;
+  }
+  
+  .navbar-list .list-item.active {
+    color: black; 
+  }
+  
+  .navbar-list .list-item.active:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    left: 0;
+    bottom: -5px;
+  }
+  
+  input[type="button"] {
+    background-color: transparent;
+    color: #007bff;
+    padding: 10px 20px;
+    border: 2px solid #007bff;
+    border-radius: 12px;
+    cursor: pointer;
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  
+  input[type="button"]:hover {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  /* Hamburger button */
+  .hamburger {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 11; /* Make sure it's above the drawer */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .hamburger {
+      display: block;
+    }
+  
+    .navbar-content {
+      width: 250px; /* Adjust the width of the drawer */
+      transform: translateX(100%); /* Initially hidden off-screen */
+    }
+  
+    .navbar-content.open {
+      transform: translateX(0); /* Slide in the drawer */
+    }
+  
+    .list-items {
+      width: 100%;
+    }
+  
+    .navbar-list {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    input[type="button"] {
+      width: 100%;
+    }
+  }
+  
