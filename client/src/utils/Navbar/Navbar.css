@@ -1,7 +1,7 @@
-/* Existing styles */
+/* Base styles (applied for larger screens) */
 .navbar-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     padding: 10px 20px;
     background-color: white;
@@ -10,7 +10,7 @@
   }
   
   .logo-container {
-    margin-right: auto;
+    margin-right: 50px;
   }
   
   .logo-container img {
@@ -19,39 +19,27 @@
   
   .navbar-content {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    transition: transform 0.3s ease;
-    overflow: hidden;
-    transform: translateX(100%); /* Initially off-screen to the right */
-    position: fixed; /* Make the drawer fixed so it doesn't push the content */
-    right: 0;
-    top: 0;
-    height: 100%;
-    background-color: white;
-    flex-direction: column;
-    justify-content: center;
-    padding: 20px;
-    z-index: 10;
-  }
-  
-  .navbar-content.open {
-    transform: translateX(0); /* Slide in the drawer */
   }
   
   .navbar-list {
+    display: flex;
     list-style: none;
     padding: 0;
     margin: 0;
-    width: 100%;
-    text-align: left;
+    margin-right: 20px;
   }
   
   .navbar-list .list-item {
-    margin: 15px 0;
-    font-size: 18px;
+    margin: 0 15px;
+    font-size: 16px;
     font-weight: bold;
     color: black;
     cursor: pointer;
+    position: relative;
+    font-weight: 200;
+    font-size: 15px;
   }
   
   .navbar-list .list-item:hover {
@@ -82,7 +70,6 @@
     font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
     font-weight: 500;
     font-size: 14px;
-    margin-top: 20px;
   }
   
   input[type="button"]:hover {
@@ -90,43 +77,79 @@
     color: white;
   }
   
-  /* Hamburger button */
-  .hamburger {
-    display: none;
-    font-size: 24px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    position: relative;
-    z-index: 11; /* Make sure it's above the drawer */
-  }
-  
-  /* Responsive Styles */
+  /* Mobile-specific styles (for screens <= 768px) */
   @media (max-width: 768px) {
-    .hamburger {
-      display: block;
-    }
-  
     .navbar-content {
+      position: fixed;
+      right: 0;
+      top: 0;
+      height: 100%;
+      background-color: white;
+      flex-direction: column;
+      justify-content: center;
+      padding: 20px;
+      z-index: 10;
       width: 250px; /* Adjust the width of the drawer */
       transform: translateX(100%); /* Initially hidden off-screen */
+      transition: transform 0.3s ease;
+      overflow: hidden;
     }
   
     .navbar-content.open {
       transform: translateX(0); /* Slide in the drawer */
     }
   
-    .list-items {
+    .navbar-list {
+      flex-direction: column;
+      text-align: left;
       width: 100%;
     }
   
-    .navbar-list {
-      flex-direction: column;
-      width: 100%;
+    .navbar-list .list-item {
+      margin: 15px 0;
+      font-size: 18px;
+    }
+  
+    .hamburger {
+      display: block;
+      font-size: 24px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      position: relative;
+      z-index: 11; /* Make sure it's above the drawer */
     }
   
     input[type="button"] {
+      margin-top: 20px;
       width: 100%;
+    }
+  
+    .logo-container {
+      margin-right: auto;
+    }
+  }
+  
+  /* Hide the hamburger icon and keep original spacing on larger screens */
+  @media (min-width: 769px) {
+    .hamburger {
+      display: none;
+    }
+  
+    .navbar-content {
+      position: static;
+      transform: none;
+      width: auto;
+      flex-direction: row;
+    }
+  
+    .navbar-list {
+      flex-direction: row;
+      margin-right: 20px;
+    }
+  
+    input[type="button"] {
+      margin-left: 50px;
     }
   }
   

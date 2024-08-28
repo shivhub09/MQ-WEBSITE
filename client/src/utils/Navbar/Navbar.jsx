@@ -5,7 +5,7 @@ import './Navbar.css';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleNavbar = () => {
+  const toggleDrawer = () => {
     setIsOpen(!isOpen);
   };
 
@@ -15,16 +15,12 @@ const Navbar = () => {
         <img src={logo} alt="Marcos Quay Logo" />
       </div>
 
-      <button className="hamburger" onClick={toggleNavbar}>
-        &#9776;
-      </button>
-
       <div className={`navbar-content ${isOpen ? 'open' : ''}`}>
         <div className="list-items">
           <ul className="navbar-list">
             <li className="list-item">Home</li>
             <li className="list-item">About Us</li>
-            <li className="list-item">Offerings</li>
+            <li className="list-item">Our offerings</li>
             <li className="list-item">Gallery</li>
             <li className="list-item">Career</li>
             <li className="list-item">Contact</li>
@@ -33,6 +29,10 @@ const Navbar = () => {
 
         <input type="button" value="ENROLL NOW" />
       </div>
+
+      <button className="hamburger" onClick={toggleDrawer}>
+        {isOpen ? '✖' : '☰'}
+      </button>
     </div>
   );
 };
