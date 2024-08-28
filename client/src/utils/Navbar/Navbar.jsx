@@ -18,12 +18,12 @@ const Navbar = () => {
       <div className={`navbar-content ${isOpen ? 'open' : ''}`}>
         <div className="list-items">
           <ul className="navbar-list">
-            <li className="list-item">Home</li>
-            <li className="list-item">About Us</li>
-            <li className="list-item">Our offerings</li>
-            <li className="list-item">Gallery</li>
-            <li className="list-item">Career</li>
-            <li className="list-item">Contact</li>
+            <li className="list-item"> <a href="/home">Home</a> </li>
+            <li className="list-item"><a href="/aboutUs">About Us</a> </li>
+            <li className="list-item"><a href="/ourOfferings">Out Offerings</a></li>
+            <li className="list-item"><a href="/gallery">Gallery</a></li>
+            <li className="list-item"><a href="/career">Career</a></li>
+            <li className="list-item"><a href="/contact">Contact</a></li>
           </ul>
         </div>
 
