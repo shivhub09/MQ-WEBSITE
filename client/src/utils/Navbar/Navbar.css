@@ -1,90 +1,100 @@
-/* Base styles (applied for larger screens) */
-.navbar-container {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: white;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
-  }
-  
-  .logo-container {
-    margin-right: 50px;
-  }
-  
-  .logo-container img {
-    height: 20px; 
-  }
-  
-  .navbar-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .navbar-list {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    margin-right: 20px;
-  }
-  
-  .navbar-list a{
-    text-decoration: none;
-    color: black;
-  }
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
 
-  .navbar-list .list-item {
-    margin: 0 15px;
-    font-size: 16px;
-    font-weight: bold;
-    color: black;
-    cursor: pointer;
-    position: relative;
-    font-weight: 200;
-    font-size: 15px;
-  }
-  
-  .navbar-list .list-item:hover {
-    color: #007bff;
-  }
-  
-  .navbar-list .list-item.active {
-    color: black; 
-  }
-  
-  .navbar-list .list-item.active:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: black;
-    left: 0;
-    bottom: -5px;
-  }
-  
-  input[type="button"] {
-    background-color: transparent;
-    color: #007bff;
-    padding: 10px 20px;
-    border: 2px solid #007bff;
-    border-radius: 12px;
-    cursor: pointer;
-    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-  }
-  
-  input[type="button"]:hover {
-    background-color: #007bff;
-    color: white;
-  }
-  
-  /* Mobile-specific styles (for screens <= 768px) */
-  @media (max-width: 768px) {
-    .navbar-content {
+.navbar-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: white;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  /* position: fixed; Fix the navbar to the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+.logo-container {
+  margin-right: 50px;
+}
+
+.logo-container img {
+  height: 20px; 
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-right: 20px;
+}
+
+.navbar-list a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar-list .list-item {
+  margin: 0 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+  position: relative;
+  font-weight: 200;
+  font-size: 15px;
+}
+
+.navbar-list .list-item:hover {
+  color: #007bff;
+}
+
+.navbar-list .list-item.active {
+  color: black; 
+}
+
+.navbar-list .list-item.active:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  left: 0;
+  bottom: -5px;
+}
+
+.enrolNowButton {
+  background-color: transparent;
+  color: #007bff;
+  padding: 10px 20px;
+  border: 2px solid #007bff;
+  border-radius: 12px;
+  cursor: pointer;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.enrolNowButton:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Mobile-specific styles (for screens <= 768px) */
+@media (max-width: 768px) {
+  .navbar-content {
       position: fixed;
       right: 0;
       top: 0;
@@ -98,63 +108,63 @@
       transform: translateX(100%); /* Initially hidden off-screen */
       transition: transform 0.3s ease;
       overflow: hidden;
-    }
-  
-    .navbar-content.open {
+  }
+
+  .navbar-content.open {
       transform: translateX(0); /* Slide in the drawer */
-    }
-  
-    .navbar-list {
+  }
+
+  .navbar-list {
       flex-direction: column;
       text-align: left;
       width: 100%;
-    }
-  
-    .navbar-list .list-item {
+  }
+
+  .navbar-list .list-item {
       margin: 15px 0;
       font-size: 18px;
-    }
-  
-    .hamburger {
+  }
+
+  .hamburger {
       display: block;
       font-size: 24px;
       background: none;
       border: none;
       cursor: pointer;
       position: relative;
-      z-index: 11; /* Make sure it's above the drawer */
-    }
-  
-    input[type="button"] {
+      z-index: 11;
+      margin-right: 50px;
+  }
+
+  .enrolNowButton {
       margin-top: 20px;
       width: 100%;
-    }
-  
-    .logo-container {
-      margin-right: auto;
-    }
   }
-  
-  /* Hide the hamburger icon and keep original spacing on larger screens */
-  @media (min-width: 769px) {
-    .hamburger {
+
+  .logo-container {
+      margin-right: auto;
+  }
+}
+
+/* Hide the hamburger icon and keep original spacing on larger screens */
+@media (min-width: 769px) {
+  .hamburger {
       display: none;
-    }
-  
-    .navbar-content {
+  }
+
+  .navbar-content {
       position: static;
       transform: none;
       width: auto;
       flex-direction: row;
-    }
-  
-    .navbar-list {
+  }
+
+  .navbar-list {
       flex-direction: row;
       margin-right: 20px;
-    }
-  
-    input[type="button"] {
-      margin-left: 50px;
-    }
   }
-  
+
+  .enrolNowButton {
+      margin-left: 50px;
+  }
+}

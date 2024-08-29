@@ -27,7 +27,7 @@ const Navbar = () => {
           </ul>
         </div>
 
-        <input type="button" value="ENROLL NOW" />
+        <input type="button" className='enrolNowButton' value="ENROLL NOW" />
       </div>
 
       <button className="hamburger" onClick={toggleDrawer}>
