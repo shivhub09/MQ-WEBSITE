@@ -1,175 +1,55 @@
-/* what we do */
-.what-we-do-container {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 40px;
-  box-sizing: border-box;
-  background-color: #f7f9fc;
-}
-
-.what-we-do-container-title {
-  font-family: "Poppins", system-ui;
-  font-size: 50px;
-  color: #0c55a5;
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
-  font-weight: 700;
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-.what-we-do-container-content-box {
-  width: 90%;
-  max-width: 1200px;
-  height: 50%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-top: 20px;
-}
-
-.what-we-do-container-content {
-  width: 50%;
-  height: 75%;
-  font-family: "Poppins", system-ui;
-  font-weight: 300;
-  font-size: 16px;
-  color: rgb(100, 100, 100);
-  letter-spacing: 1px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding-right: 20px;
-}
-
-.what-we-do-container-content p {
-  margin-bottom: 20px;
-  text-align: justify;
-}
-
-.what-we-do-container-content ul {
-  padding: 0;
+*{
   margin: 0;
-  list-style-type: none;
+  padding: 0;
+  box-sizing:border-box ;
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+
 }
 
-.what-we-do-container-content li {
-  margin: 15px 0;
+*::-webkit-scrollbar{
+  display: none; /* For Chrome, Safari, and Opera */
+
+}
+
+.container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+.container::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
+section{
+  height: 100vh;
   display: flex;
   align-items: center;
-  text-align: justify;
+  justify-content: center;
+  scroll-snap-align: start;
 }
 
-.what-we-do-container-content img {
-  margin-right: 10px;
-  height: 20px;
-  width: 20px;
+.one{
+  background-color: rgb(36,164,138);
 }
 
-.getInTouchBtn {
-  margin-top: 20px;
-  padding: 10px 24px;
-  background-color: #0c55a5;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-family: "Poppins", system-ui;
-  font-size: 14px;
-  font-weight: 600;
-  align-self: flex-start;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+.two{
+  background-color: rgb(211,79,79);
+}
+.three{
+  background-color: rgb(36,91,175);
+}
+.fifth{
+  background-color: rgb(19,6,191);
 }
 
-.getInTouchBtn:hover {
-  background-color: #d92027;
-  transform: scale(1.05);
+.sixth{
+  background-color: rgb(191,64,11);
 }
 
-.what-we-do-container-images {
-  width: 50%;
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-  box-sizing: border-box;
+.seventh{
+  background-color: rgb(191,4,191);
 }
 
-.what-we-do-container-images img {
-  width: 30%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.what-we-do-container-images img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .what-we-do-container-content-box {
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-  }
-
-  .what-we-do-container-content {
-    width: 100%;
-    padding-right: 0;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-
-  .what-we-do-container-content p {
-    margin-bottom: 15px;
-    font-size: 14px;
-  }
-
-  .what-we-do-container-images {
-    width: 100%;
-    flex-direction: row; /* Images stay in a row */
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-
-  .what-we-do-container-images img {
-    width: 30%; /* Reduce the image width */
-    height: auto; /* Keep height auto */
-    margin: 0 10px; /* Add some spacing between images */
-  }
-
-  .getInTouchBtn {
-    font-size: 12px;
-    padding: 8px 20px;
-  }
-
-  .what-we-do-container-title {
-    font-size: 36px;
-  }
-}
-
-@media (max-width: 480px) {
-  .what-we-do-container-title {
-    font-size: 30px;
-  }
-
-  .what-we-do-container-content p {
-    font-size: 13px;
-  }
-
-  .getInTouchBtn {
-    font-size: 11px;
-    padding: 6px 18px;
-  }
-
-  .what-we-do-container-images img {
-    width: 28%; /* Slightly smaller on very small screens */
-  }
-}

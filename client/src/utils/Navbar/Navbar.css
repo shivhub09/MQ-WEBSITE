@@ -1,7 +1,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* Prevent horizontal scroll */
+  overflow-x: hidden; 
 }
 
 .navbar-container {
@@ -12,11 +12,11 @@ html, body {
   background-color: white;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
-  /* position: fixed; Fix the navbar to the top */
+  position: fixed; 
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000; /* Ensure it's above other content */
+  z-index: 1000; 
 }
 
 .logo-container {
