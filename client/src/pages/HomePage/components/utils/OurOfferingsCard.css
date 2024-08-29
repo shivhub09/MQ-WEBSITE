@@ -1,0 +1,61 @@
+.ourOfferingsCard {
+    font-family: "Poppins", system-ui;
+    border: 1px solid #ddd;
+    border-radius: 8px; 
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    background-color: #fff; 
+    width: 300px; 
+    height: 450px;
+    margin: 16px 20px;
+    transition: box-shadow 0.3s ease;
+}
+
+.ourOfferingsCard:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.ourOfferingsCard-image {
+    width: 100%; 
+    height: 175px; 
+    overflow: hidden; 
+    border-bottom: 1px solid #ddd; 
+}
+
+.ourOfferingsCard-image img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+}
+
+.ourOfferingsCard-content {
+    padding: 24px 16px; 
+    text-align: left; 
+    min-height: 200px; 
+}
+
+.ourOfferingsCard-content h3 {
+    font-size: 18px; 
+    color: #333; 
+    margin-bottom: 8px; 
+    font-weight: 500;
+}
+
+.ourOfferingsCard-content p {
+    font-size: 15px; 
+    color: #666; 
+    margin-bottom: 16px; 
+}
+
+.ourOfferingsCard-link {
+    color: #d90429; 
+    font-weight: 400;
+    text-decoration: none; 
+    display: inline-flex; 
+    align-items: center;
+    margin-top: 10px;
+}
+
+.ourOfferingsCard-link:hover {
+    text-decoration: underline;
+}
