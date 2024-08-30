@@ -1,0 +1,45 @@
+.footer-container {
+    height: 100%;
+    width: 100%;
+    background-color: #0f172a; /* Adjusted to match the dark background */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px; 
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow effect */
+}
+
+.footer-line {
+    font-family: "Poppins", sans-serif;
+    color: #94a3b8; /* Lightened the text color for better readability */
+    font-size: 14px; /* Slightly larger font size */
+    font-weight: 400; /* Adjusted weight for better readability */
+    letter-spacing: 1px;
+    margin: 0; /* Removed default margin */
+}
+
+.social-media-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 20%;
+}
+
+.social-media-footer img {
+    height: 30px;
+    width: 30px;
+    transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0.8;
+    padding: 5px;
+    background-color: rgb(183, 183, 183);
+    border-radius: 12px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+.social-media-footer img:hover {
+    transform: scale(1.1);
+    opacity: 1;
+    background-color: #e5e7eb; /* A slightly lighter grey */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15); /* Enhances shadow on hover */
+}
+
