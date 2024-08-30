@@ -1,5 +1,5 @@
 .testimonialCard-container {
-    max-width: 1100px;
+    max-width: 1100px; /* Increased from 900px to 1000px */
     margin: 0 auto;
     padding: 20px;
     background-color: #ffffff;
