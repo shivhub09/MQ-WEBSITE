@@ -1,0 +1,15 @@
+h1{
+    font-family: "Poppins", system-ui;
+    font-size: 22px;
+    color: #d92027;
+    font-weight: 500;
+}
+
+h2{
+    font-family: "Poppins", system-ui;
+    font-size: 70px;
+    color: #0c55a5;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: start;
+}

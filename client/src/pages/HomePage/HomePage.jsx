@@ -5,6 +5,7 @@ import HomePage2 from './components/images/About-Us-2.png';
 import HomePage3 from './components/images/About-Us-3.png';
 import './HomePage.css';
 import OurOfferingsCard from './components/utils/OurOfferingsCard';
+import OurJourneyCard from './components/utils/OurJourneyCard';
 
 
 const HomePage = () => {
@@ -64,6 +65,12 @@ const HomePage = () => {
       <section class="fourth">
         <div className="ourJourney">
           <h1 className="ourJourney-container-title">Our Journey So far</h1>
+          <div className="ourJourney-container-content">
+            <OurJourneyCard title="Student Impacted" number="152105+"></OurJourneyCard>
+            <OurJourneyCard title="Schools Empowered" number="128+"></OurJourneyCard>
+            <OurJourneyCard title="Coaches Trained" number="641+"></OurJourneyCard>
+ 
+          </div>
         </div>
       </section>
 
