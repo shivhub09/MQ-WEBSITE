@@ -57,8 +57,8 @@ html, body {
   font-size: 15px;
 }
 
-.navbar-list .list-item:hover {
-  color: #007bff;
+.navbar-list .list-item a:hover {
+  color: #d92128;
 }
 
 .navbar-list .list-item.active {
@@ -85,12 +85,14 @@ html, body {
   font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   font-weight: 500;
   font-size: 14px;
+  transition: background-color 0.3s ease 0.1s, color 0.3s ease 0.1s; /* Added delay to transitions */
 }
 
 .enrolNowButton:hover {
   background-color: #007bff;
   color: white;
 }
+
 
 /* Mobile-specific styles (for screens <= 768px) */
 @media (max-width: 768px) {

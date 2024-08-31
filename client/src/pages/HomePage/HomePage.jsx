@@ -5,7 +5,10 @@ import HomePage2 from './components/images/About-Us-2.png';
 import HomePage3 from './components/images/About-Us-3.png';
 import './HomePage.css';
 import OurOfferingsCard from './components/utils/OurOfferingsCard';
-
+import OurJourneyCard from './components/utils/OurJourneyCard';
+import TestimonialCard from './components/utils/TestimonialCard';
+import TestimonialCarousel from './components/utils/TestimonialCarousel';
+import Footer from '../../utils/Footer/Footer';
 
 const HomePage = () => {
   return (
@@ -50,7 +53,7 @@ const HomePage = () => {
 
         <div className="ourOfferings-content">
           <h1 className="ourOfferings-container-title">Our Offerings</h1>
-          <div className="ourOfferings-card-container"> 
+          <div className="ourOfferings-card-container">
             <OurOfferingsCard img={HomePage1} title="In School Programs" content="Aims to inspire a culture of fitness through scientifically researched & result driven programs with a curriculum that is exciting & engaging every student." url="This is the url" />
             <OurOfferingsCard img={HomePage1} title="Sports Academy" content="Marcos Quay's Sports Academy provides fun, accessible sports training for children, emphasizing fundamental skills and lifelong passion through certified coaches and diverse activities." url="This is the url" />
             <OurOfferingsCard img={HomePage1} title="ACE" content="A program dedicated to delivering an unparalleled experience for students, parents, schools, and all stakeholders involved." url="This is the url" />
@@ -64,14 +67,29 @@ const HomePage = () => {
       <section class="fourth">
         <div className="ourJourney">
           <h1 className="ourJourney-container-title">Our Journey So far</h1>
+          <div className="ourJourney-container-content">
+            <OurJourneyCard title="Student Impacted" number="152105+"></OurJourneyCard>
+            <OurJourneyCard title="Schools Empowered" number="128+"></OurJourneyCard>
+            <OurJourneyCard title="Coaches Trained" number="641+"></OurJourneyCard>
+          </div>
         </div>
       </section>
 
-      <section class="fifth">
+      {/* <section class="fifth">
         <div className="testimonal">
           <h1 className="testimonal-container-title">Testimonial</h1>
+          <div className="testimonal-container-content">
+            <TestimonialCard content="Marcos Quay Sports Academy is associated with our school, Shree Chandulal Nanavati Vinay Mandir from year 2016. Their sports and athletic activities provide a plethora of benefits to our children for their achievement in sports. With Marcos Quay' s support & guidance, school has participated in many ICSE level Interschool events such as Football, Basketball, Kabaddi, Carrom, Swimming, Artistic Yoga competitions and we are proud to say that our school won 1st prize in Artistic Yoga Competition among 11 schools & secured 3rd place in Kabaddi Competition Girls U/17." name="Mrs. Nilam Moolchandani" position="Principal | Shree Chandulal Nanavati Vinay Mandir
+"></TestimonialCard>
+            <TestimonialCard content="Marcos Quay Sports Academy is associated with our school, Shree Chandulal Nanavati Vinay Mandir from year 2016. Their sports and athletic activities provide a plethora of benefits to our children for their achievement in sports. With Marcos Quay' s support & guidance, school has participated in many ICSE level Interschool events such as Football, Basketball, Kabaddi, Carrom, Swimming, Artistic Yoga competitions and we are proud to say that our school won 1st prize in Artistic Yoga Competition among 11 schools & secured 3rd place in Kabaddi Competition Girls U/17." name="Mrs. Nilam Moolchandani" position="Principal | Shree Chandulal Nanavati Vinay Mandir
+"></TestimonialCard>
+            <TestimonialCard content="Marcos Quay Sports Academy is associated with our school, Shree Chandulal Nanavati Vinay Mandir from year 2016. Their sports and athletic activities provide a plethora of benefits to our children for their achievement in sports. With Marcos Quay' s support & guidance, school has participated in many ICSE level Interschool events such as Football, Basketball, Kabaddi, Carrom, Swimming, Artistic Yoga competitions and we are proud to say that our school won 1st prize in Artistic Yoga Competition among 11 schools & secured 3rd place in Kabaddi Competition Girls U/17." name="Mrs. Nilam Moolchandani" position="Principal | Shree Chandulal Nanavati Vinay Mandir
+"></TestimonialCard>
+          </div>
         </div>
-      </section>
+      </section> */}
+
+      <TestimonialCarousel></TestimonialCarousel>
     </div>
   );
 }

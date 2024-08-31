@@ -26,7 +26,6 @@ function App() {
           <Route path="/ourOfferings" element={<OfferingsPage></OfferingsPage>}></Route>
         </Routes>
       </Router>
-      {/* <Footer /> */}
     </>
 
   )
