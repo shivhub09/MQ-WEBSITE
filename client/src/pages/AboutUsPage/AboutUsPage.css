@@ -143,7 +143,7 @@ section {
 .aboutUs-list h1 {
     font-family: "Poppins", system-ui;
     font-size: 24px;
-    color: #0c55a5;
+    color: #d92027;
     margin-bottom: 10px;
 }
 
@@ -170,6 +170,63 @@ section {
 }
 
 
+/* vision mission start */
+.vision-mission-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 85%;
+    height: 100vh;
+}
+
+.vision-container, .mission-container{
+    display: flex;
+    width: 100%;
+    height: 30%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.vision-container img{
+    width: 25%;
+}
+
+.mission-container img{
+    width: 35%;
+}
+
+.vision-container h2, .mission-container h2{
+    font-family: "Poppins", system-ui;
+    font-size: 45px;
+    color: #0c55a5;
+    font-weight: 700;
+    font-weight: bold;
+    margin: 0;
+}
+
+.mission-container-content, .vision-container-content{
+    width: 50%;
+    
+}
+
+
+.vision-container p , .mission-container p{
+    font-family: "Poppins", system-ui;
+    font-weight: 300;
+    font-size: 18px;
+    color: rgb(100, 100, 100);
+    margin-bottom: 10px;
+}
+
+.vision-container a, .mission-container a{
+    text-decoration: none;
+    font-family: "Poppins", system-ui;
+    font-size: 16px;
+    color: #d92027;
+}
+
+
+/* vision mission end  */
 
 /* ceo message */
 
