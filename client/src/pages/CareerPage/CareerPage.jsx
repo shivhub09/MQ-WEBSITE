@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import React from 'react'
+import Footer from '../../utils/Footer/Footer';
 import './CareerPage.css';
 
 const CareerPage = () => {
@@ -9,7 +10,7 @@ const CareerPage = () => {
     mobileNumber: '',
     cv: null,
   });
-  
+
   const handleChange = (e) => {
     const { name, value, files } = e.target;
     if (name === 'cv') {
@@ -64,7 +65,7 @@ const CareerPage = () => {
                 value={formData.mobileNumber}
                 onChange={handleChange}
                 required
-            />
+              />
             </div>
           </div>
           <div className="form-group">
@@ -81,8 +82,9 @@ const CareerPage = () => {
           </div>
           <button type="submit" className="submit-button">Submit Now</button>
         </form>
+      </div>
+      
     </div>
-    </div>  
   );
 }
 export default CareerPage
