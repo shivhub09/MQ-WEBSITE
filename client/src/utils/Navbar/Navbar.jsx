@@ -9,6 +9,9 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
+  const handleEnrollClick = () => {
+    window.location.href = 'https://pay.marcosquay.com/form/index.php';
+  };
   return (
     <div className="navbar-container">
       <div className="logo-container">
@@ -20,14 +23,14 @@ const Navbar = () => {
           <ul className="navbar-list">
             <li className="list-item"> <a href="/home">Home</a> </li>
             <li className="list-item"><a href="/aboutUs">About Us</a> </li>
-            <li className="list-item"><a href="/ourOfferings">Out Offerings</a></li>
+            <li className="list-item"><a href="/ourOfferings">Our Offerings</a></li>
             <li className="list-item"><a href="/gallery">Gallery</a></li>
             <li className="list-item"><a href="/career">Career</a></li>
             <li className="list-item"><a href="/contact">Contact</a></li>
           </ul>
         </div>
 
-        <input type="button" className='enrolNowButton' value="ENROLL NOW" />
+        <input type="button" className='enrolNowButton' value="ENROLL NOW" onClick={handleEnrollClick} />
       </div>
 
       <button className="hamburger" onClick={toggleDrawer}>

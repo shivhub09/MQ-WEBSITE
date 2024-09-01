@@ -7,7 +7,7 @@ const OurJourneyCard = (props) => {
   useEffect(() => {
     const end = parseInt(props.number);
     const start = end > 100000 ? 100000 : 0; // Start from 100,000 if the number is large
-    const duration = 2000; // duration in ms
+    const duration = 4000; // duration in ms
     let current = start;
     const increment = end > start ? Math.ceil((end - start) / (duration / 50)) : -1;
     const stepTime = Math.abs(Math.floor(duration / (end - start)));
