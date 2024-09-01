@@ -8,6 +8,10 @@ import AboutUsPage from './pages/AboutUsPage/AboutUsPage';
 import OfferingsPage from './pages/OfferingsPage/OfferingsPage';
 import Navbar from './utils/Navbar/Navbar';
 import Footer from './utils/Footer/Footer';
+import SchoolProgram from './pages/OfferingsPage/SchoolProgram/SchoolProgram';
+import SportsAcademy from './pages/OfferingsPage/SportsAcademy/SportsAcademy';
+import ACE from './pages/OfferingsPage/ACE/ACE';
+import BrandSponsorship from './pages/OfferingsPage/BrandSponsorship/BrandSponsorship';
 
 
 function App() {
@@ -23,7 +27,10 @@ function App() {
           <Route path="/gallery" element={<GalleryPage></GalleryPage>}></Route>
           <Route path="/contact" element={<ContactPage></ContactPage>}></Route>
           <Route path="/career" element={<CareerPage></CareerPage>}></Route>
-          <Route path="/ourOfferings" element={<OfferingsPage></OfferingsPage>}></Route>
+          <Route path="/ourOfferings/in-school-program" element={<SchoolProgram></SchoolProgram>}></Route>
+          <Route path="/ourOfferings/sports-academy" element={<SportsAcademy></SportsAcademy>}></Route>
+          <Route path="/ourOfferings/ace" element={<ACE/>}></Route>
+          <Route path="/ourOfferings/brand-sponsorship" element={<BrandSponsorship></BrandSponsorship>}></Route>
         </Routes>
       </Router>
     </>
