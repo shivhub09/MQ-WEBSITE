@@ -1,3 +1,4 @@
+/* General Styles */
 html, body {
   margin: 0;
   padding: 0;
@@ -11,7 +12,7 @@ html, body {
   padding: 15px 20px;
   background-color: white;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-family: "Poppins", system-ui;
   position: fixed; 
   top: 0;
   left: 0;
@@ -31,6 +32,8 @@ html, body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: "Poppins", system-ui;
+
 }
 
 .navbar-list {
@@ -44,37 +47,60 @@ html, body {
 .navbar-list a {
   text-decoration: none;
   color: black;
+  
 }
 
 .navbar-list .list-item {
   margin: 0 15px;
   font-size: 16px;
-  font-weight: bold;
+  /* font-weight: bold; */
   color: black;
   cursor: pointer;
   position: relative;
-  font-weight: 200;
-  font-size: 15px;
+  
 }
 
 .navbar-list .list-item a:hover {
   color: #d92128;
 }
 
-.navbar-list .list-item.active {
-  color: black; 
-}
-
-.navbar-list .list-item.active:after {
-  content: '';
+/* Dropdown styles */
+.navbar-list .list-item .dropdown-content {
+  display: none;
   position: absolute;
-  width: 100%;
-  height: 2px;
-  background-color: black;
+  background-color: white;
+  min-width: 250px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
   left: 0;
-  bottom: -5px;
+  top: 100%;
+  padding: 10px 0;
+  border-radius: 12px;
+  font-family: "Poppins", system-ui;
+  padding: 10px;
+
 }
 
+.navbar-list .list-item:hover .dropdown-content {
+  display: block;
+  border-radius: 12px;
+}
+
+.navbar-list .list-item .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  font-family: "Poppins", system-ui;
+  text-decoration: none;
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.navbar-list .list-item .dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Enroll Now Button */
 .enrolNowButton {
   background-color: transparent;
   color: #007bff;
@@ -82,10 +108,10 @@ html, body {
   border: 2px solid #007bff;
   border-radius: 12px;
   cursor: pointer;
-  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-family: "Poppins", system-ui;
   font-weight: 500;
   font-size: 14px;
-  transition: background-color 0.3s ease 0.1s, color 0.3s ease 0.1s; /* Added delay to transitions */
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .enrolNowButton:hover {
@@ -93,8 +119,7 @@ html, body {
   color: white;
 }
 
-
-/* Mobile-specific styles (for screens <= 768px) */
+/* Mobile Styles */
 @media (max-width: 768px) {
   .navbar-content {
       position: fixed;
@@ -106,14 +131,14 @@ html, body {
       justify-content: center;
       padding: 20px;
       z-index: 10;
-      width: 250px; /* Adjust the width of the drawer */
-      transform: translateX(100%); /* Initially hidden off-screen */
+      width: 250px;
+      transform: translateX(100%);
       transition: transform 0.3s ease;
       overflow: hidden;
   }
 
   .navbar-content.open {
-      transform: translateX(0); /* Slide in the drawer */
+      transform: translateX(0);
   }
 
   .navbar-list {
@@ -148,7 +173,6 @@ html, body {
   }
 }
 
-/* Hide the hamburger icon and keep original spacing on larger screens */
 @media (min-width: 769px) {
   .hamburger {
       display: none;
