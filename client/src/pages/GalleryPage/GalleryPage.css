@@ -11,12 +11,15 @@
 .row h1{
     color: #0C55A5;
     font-size: 60px;
-    
+    font-family: "Poppins", system-ui;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+    font-weight: 600;
 }
 .row p{
     width:40%;
     color: #4B5563;
     text-align: center;
+    font-family: "Poppins", system-ui;
     font-size: 16px;
 
 }
@@ -42,8 +45,14 @@ margin-left: 0; /* Remove margin on the first container */
 margin-right: 0; /* Remove margin on the last container */
 }
 
-.child-container img{
+.child-container img {
     width: 100%;
+    transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out;
+    margin: 5px 0px;
 }
 
-/* Responsive sites */
+.child-container img:hover {
+    filter: brightness(0.8);
+    transform: scale(1.01);
+}
+
