@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
+import React from 'react'
 import './CareerPage.css';
 
 const CareerPage = () => {
@@ -8,19 +9,11 @@ const CareerPage = () => {
     mobileNumber: '',
     cv: null
   });
-  const [errors, setErrors] = useState({});
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
-
-  const handleFileChange = (e) => {
-    const file = e.target.files[0];
-    if (file && file.type === 'application/pdf' && file.size <= 2 * 1024 * 1024) {
-      setFormData({ ...formData, cv: file });
-      setErrors({ ...errors, cv: '' });
+  
+  const handleChange = (e) => {
+    const { name, value, files } = e.target;
+    if (name === 'cv') {
+      setFormData({ ...formData, [name]: files[0] });
     } else {
       setErrors({ ...errors, cv: 'Please upload a PDF file less than 2MB in size.' });
     }
@@ -46,67 +39,65 @@ const CareerPage = () => {
   };
 
   return (
-    <div className="form-container">
-      <h1 className="form-title">Join Our Growing Team</h1>
-      {submitted ? (
-        <div className="alert">
-          <p>Thank you for your application! We'll be in touch soon.</p>
-        </div>
-      ) : (
-        <div className='container-2'>
-            <form onSubmit={handleSubmit}>
-            <div className="form-group">
-                <label htmlFor="fullName">Full Name</label>
-                <input
-                type="text"
-                id="fullName"
-                name="fullName"
-                value={formData.fullName}
-                onChange={handleInputChange}
-                />
-                {errors.fullName && <p className="error">{errors.fullName}</p>}
+    <div className='main-container1'>
+      <div className='row1'>
+        <h1>Join Our Growing Team</h1>
+      </div>
+      <div className='forms'>
+        <form onSubmit={handleSubmit}>
+          <div className="form-group">
+            <label htmlFor="fullName">Full Name</label>
+            <input
+              type="text"
+              id="fullName"
+              name="fullName"
+              value={formData.fullName}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <div className="details">
+            <label htmlFor="email">Email</label>
+            <div className="details1">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+              />
             </div>
-            <div className="form-row">
-                <div className="form-group">
-                <label htmlFor="email">Email</label>
-                <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleInputChange}
-                />
-                {errors.email && <p className="error">{errors.email}</p>}
-                </div>
-                <div className="form-group">
-                <label htmlFor="mobileNumber">Mobile Number</label>
-                <input
-                    type="tel"
-                    id="mobileNumber"
-                    name="mobileNumber"
-                    value={formData.mobileNumber}
-                    onChange={handleInputChange}
-                />
-                {errors.mobileNumber && <p className="error">{errors.mobileNumber}</p>}
-                </div>
+          </div>
+          <div className="details">
+            <label htmlFor="mobileNumber">Mobile Number</label>
+            <div className="details1">
+              <input
+                type="tel"
+                id="mobileNumber"
+                name="mobileNumber"
+                value={formData.mobileNumber}
+                onChange={handleChange}
+                required
+            />
             </div>
-            <div className="form-group">
-                <label htmlFor="cv">Upload CV</label>
-                <input
-                type="file"
-                id="cv"
-                name="cv"
-                onChange={handleFileChange}
-                accept=".pdf"
-                />
-                <p className="file-info">Upload only pdf file allowed & file size will be less than 2MB</p>
-                {errors.cv && <p className="error">{errors.cv}</p>}
-            </div>
-            <button type="submit" className="submit-button">Submit Now</button>
-            </form>
-        </div>
-      )}
+          </div>
+          <div className="form-group">
+            <label htmlFor="cv">Upload CV</label>
+            <input
+              type="file"
+              id="cv"
+              name="cv"
+              onChange={handleChange}
+              accept=".pdf"
+              required
+            />
+            <small>Upload only PDF files, and the file size should be less than 2MB.</small>
+          </div>
+          <button type="submit" className="submit-button">Submit Now</button>
+        </form>
     </div>
+    </div>  
   );
 };
 
