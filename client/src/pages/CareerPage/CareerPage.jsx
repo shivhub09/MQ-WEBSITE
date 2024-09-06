@@ -1,5 +1,4 @@
-import { useState } from 'react';
-import React from 'react'
+import React, { useState } from 'react';
 import './CareerPage.css';
 
 const CareerPage = () => {
@@ -9,11 +8,19 @@ const CareerPage = () => {
     mobileNumber: '',
     cv: null
   });
-  
-  const handleChange = (e) => {
-    const { name, value, files } = e.target;
-    if (name === 'cv') {
-      setFormData({ ...formData, [name]: files[0] });
+  const [errors, setErrors] = useState({});
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleFileChange = (e) => {
+    const file = e.target.files[0];
+    if (file && file.type === 'application/pdf' && file.size <= 2 * 1024 * 1024) {
+      setFormData({ ...formData, cv: file });
+      setErrors({ ...errors, cv: '' });
     } else {
       setErrors({ ...errors, cv: 'Please upload a PDF file less than 2MB in size.' });
     }
@@ -77,9 +84,9 @@ const CareerPage = () => {
                 id="mobileNumber"
                 name="mobileNumber"
                 value={formData.mobileNumber}
-                onChange={handleChange}
-                required
-            />
+                onChange={handleInputChange}
+              />
+              {errors.mobileNumber && <p className="error">{errors.mobileNumber}</p>}
             </div>
           </div>
           <div className="form-group">
@@ -96,8 +103,8 @@ const CareerPage = () => {
           </div>
           <button type="submit" className="submit-button">Submit Now</button>
         </form>
+      )}
     </div>
-    </div>  
   );
 };
 
