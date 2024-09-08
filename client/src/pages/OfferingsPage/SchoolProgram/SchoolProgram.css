@@ -1,7 +1,102 @@
-.schoolProgram-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100vh;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -ms-overflow-style: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+.container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: start;
+}
+
+.foundations {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.schoolProgram-title {
+  margin: 0;
+}
+
+.schoolProgram-title h2 {
+  margin: 0;
+}
+
+.schoolProgram-subtitle {
+  margin: 0;
+}
+
+.schoolProgram-container-one {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 20px 0px;
+}
+
+.container-one-content {
+  width: 60%;
+  font-family: "Poppins", system-ui;
+  font-weight: 300;
+  font-size: 16px;
+  color: rgb(100, 100, 100);
+  letter-spacing: 1px;
+  text-align: justify;
+}
+
+.container-one-content ul {
+  list-style-type: none;
+}
+.container-one-image {
+  width: 30%;
+}
+
+.container-one-image img {
+  width: 70%;
+}
+
+/* our process */
+
+.ourProcess-container-one-image {
+  width: 50%;
+}
+
+.ourProcess-container-one-image img {
+  width: 100%;
+}
+
+.ourProcess-container-one-content {
+  width: 40%;
+}
+
+.ourProcess-container-one-content p {
+  font-family: "Poppins", system-ui;
+  font-weight: 300;
+  font-size: 16px;
+  color: rgb(100, 100, 100);
+  letter-spacing: 1px;
+  text-align: justify;
 }

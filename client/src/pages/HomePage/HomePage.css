@@ -15,12 +15,12 @@
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   height: 100vh;
-  scrollbar-width: none; /* For Firefox */
-  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
 }
 
 .container::-webkit-scrollbar {
-  display: none; /* For Chrome, Safari, and Opera */
+  display: none;
 }
 
 section{
@@ -34,10 +34,10 @@ section{
 /* /////////////////////////////////////////////////// */
 
 .homePage-container img {
-  width: 100%;  /* Makes the image take up the full width of the container */
-  height: 100%; /* Makes the image take up the full height of the container */
-  object-fit: cover; /* Ensures the image covers the entire container while maintaining its aspect ratio */
-  display: block; /* Removes any default spacing that might be added by inline elements */
+  width: 100%;  
+  height: 100%; 
+  object-fit: cover; 
+  display: block; 
 }
 
 
@@ -178,15 +178,15 @@ section{
 
   .what-we-do-container-images {
     width: 100%;
-    flex-direction: row; /* Images stay in a row */
+    flex-direction: row;
     justify-content: center;
     margin-bottom: 20px;
   }
 
   .what-we-do-container-images img {
-    width: 30%; /* Reduce the image width */
-    height: auto; /* Keep height auto */
-    margin: 0 10px; /* Add some spacing between images */
+    width: 30%; 
+    height: auto; 
+    margin: 0 10px;
   }
 
   .getInTouchBtn {
@@ -214,7 +214,7 @@ section{
   }
 
   .what-we-do-container-images img {
-    width: 28%; /* Slightly smaller on very small screens */
+    width: 28%; 
   }
 }
 
@@ -315,5 +315,31 @@ section{
 }
 
 
+/* Responsive Styles for Our Offerings */
+@media (max-width: 768px) {
+  .ourOfferings-card-container {
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    height: auto;
+  }
 
+  .ourOfferings-card-container > * {
+    margin-bottom: 20px;
+    width: 90%; 
+  }
+}
+
+
+@media (max-width: 768px) {
+  .testimonal-container-content {
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  .testimonal-container-content > * {
+    margin-bottom: 20px;
+    width: 90%; 
+  }
+}
 

@@ -28,7 +28,7 @@ const HomePage = () => {
           <div className="what-we-do-container-content-box">
             <div className="what-we-do-container-content">
               <p>
-                Welcome to Marcos Quay, where we empower the next generation through comprehensive sports education. Partnering with schools, we deliver expert-led programs that enhance physical skills, teamwork, and sportsmanship. Join us in fostering a healthier, more active future for our kids.
+                Welcome to MarcosQuay where we empower the next generation through comprehensive sports education. Partnering with schools, we deliver expert-led programs that enhance physical skills, teamwork, and sportsmanship. Join us in fostering a healthier, more active future for our kids.
               </p>
 
               <ul className="content-list-items">
