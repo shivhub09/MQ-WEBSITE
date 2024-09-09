@@ -34,7 +34,7 @@ const ACE = () => {
 
         <div className="ace-container-one-content">
           <div className="ace-container-one-content-para">
-          ACE stands for Acvies for Connuous Enrichment, it is a program put in place to
+            ACE stands for Acvies for Connuous Enrichment, it is a program put in place to
             go above and beyond just sports and to bring a unique experience for students,
             parents, schools, and all our stakeholders.
             We think it is important to involve all stakeholders and that communies have
