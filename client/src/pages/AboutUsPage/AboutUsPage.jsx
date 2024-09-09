@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import './AboutUsPage.css';
 import FounderImage from './Website About Us 7.png'
 import VisionImage from './Website About Us 3.png';
@@ -6,6 +6,25 @@ import MissionImage from './Website About Us 5.png';
 import Footer from '../../utils/Footer/Footer';
 
 const AboutUsPage = () => {
+  useEffect(() => {
+    const sections = document.querySelectorAll("section");
+
+    const options = {
+      threshold: 0.5, // Trigger when 50% of the section is visible
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    }, options);
+
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+  }, []);
   return (
     <>
       <div className="container">

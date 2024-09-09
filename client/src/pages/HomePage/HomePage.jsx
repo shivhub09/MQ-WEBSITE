@@ -1,4 +1,4 @@
-import React from 'react';
+import React , {useEffect} from 'react';
 import HomeImage from './components/images/Website Home2.jpg';
 import HomePage1 from './components/images/About-Us-1.png';
 import HomePage2 from './components/images/About-Us-2.png';
@@ -11,6 +11,26 @@ import TestimonialCarousel from './components/utils/TestimonialCarousel';
 import Footer from '../../utils/Footer/Footer';
 
 const HomePage = () => {
+
+  useEffect(() => {
+    const sections = document.querySelectorAll("section");
+
+    const options = {
+      threshold: 0.5, // Trigger when 50% of the section is visible
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    }, options);
+
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+  }, []);
   return (
     <div class="container">
 
