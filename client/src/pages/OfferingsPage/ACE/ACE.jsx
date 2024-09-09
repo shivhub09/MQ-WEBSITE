@@ -39,9 +39,6 @@ const ACE = () => {
           </div>
         </div>
       </section>
-
-
-      <section className='two'></section>
     </div>
   );
 }
