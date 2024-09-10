@@ -1,0 +1,91 @@
+.cpcontainer{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+}
+.cpchild-container{
+    flex:1;
+    border-radius: 5px;
+    margin: 25px;
+}
+.cpchild-container iframe{
+    border: 0px;
+    border-radius: 15px;
+}
+.content p{
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    font-family: "Poppins" , system-ui;
+}
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+.content{
+    display: flex;
+
+}
+.cpicon{
+    margin-right: 12px;
+}
+.address-content p{
+    width:45%;
+    margin-top: 4px;
+    font-size: 14px;
+}
+.company-name p{
+    color: #4B5563;
+    font-size: 12px;
+    font-family: "Poppins" , system-ui;
+}
+.contact-us h1{
+    margin-top: 15px;
+}
+.callus p{
+    color: #4B5563;
+    font-size: 12px;
+    font-family: "Poppins" , system-ui;
+}
+.phno a{
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+.callus{
+    margin-right: 20px;
+}
+.emailus p{
+    margin-left: 20px;
+}
+.cpicon1{
+    margin-left: 50px;
+}
+.emailid a{
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+.cpicon2{
+    display: flex;
+    flex-direction: row;
+}
+.cpicon2 p{
+    margin-left: 15px;
+}
+.whno a{
+    margin-left: 40px;
+}
+.whno a{
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
