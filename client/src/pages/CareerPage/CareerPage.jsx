@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './CareerPage.css';
-
+import { FaFacebook, FaInstagram, FaLinkedin, FaWhatsapp, FaYoutube} from 'react-icons/fa';
 const CareerPage = () => {
   const [formData, setFormData] = useState({
     fullName: '',
@@ -46,64 +46,121 @@ const CareerPage = () => {
   };
 
   return (
-    <div className="form-container">
-      <h1 className="form-title">Join Our Growing Team</h1>
-      {submitted ? (
-        <div className="alert">
-          <p>Thank you for your application! We'll be in touch soon.</p>
+    <div className='Container'>
+      <section className='first'>
+        <div className="form-container">
+          <h1 className="form-title">Join Our Growing Team</h1>
+          {submitted ? (
+            <div className="alert">
+              <p>Thank you for your application! We'll be in touch soon.</p>
+            </div>
+          ) : (
+            <form onSubmit={handleSubmit}>
+              <div className="form-group">
+                <label htmlFor="fullName">Full Name</label>
+                <input
+                  type="text"
+                  id="fullName"
+                  name="fullName"
+                  value={formData.fullName}
+                  onChange={handleInputChange}
+                />
+                {errors.fullName && <p className="error">{errors.fullName}</p>}
+              </div>
+              <div className="form-row">
+                <div className="form-group">
+                  <label htmlFor="email">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleInputChange}
+                  />
+                  {errors.email && <p className="error">{errors.email}</p>}
+                </div>
+                <div className="form-group">
+                  <label htmlFor="mobileNumber">Mobile Number</label>
+                  <input
+                    type="tel"
+                    id="mobileNumber"
+                    name="mobileNumber"
+                    value={formData.mobileNumber}
+                    onChange={handleInputChange}
+                  />
+                  {errors.mobileNumber && <p className="error">{errors.mobileNumber}</p>}
+                </div>
+              </div>
+              <div className="form-group">
+                <label htmlFor="cv">Upload CV</label>
+                <input
+                  type="file"
+                  id="cv"
+                  name="cv"
+                  onChange={handleFileChange}
+                  accept=".pdf"
+                />
+                <p className="file-info">Upload only pdf file allowed & file size will be less than 2MB</p>
+                {errors.cv && <p className="error">{errors.cv}</p>}
+              </div>
+              <button type="submit" className="submit-button">Submit Now</button>
+            </form>
+            
+          )}
         </div>
-      ) : (
-        <form onSubmit={handleSubmit}>
-          <div className="form-group">
-            <label htmlFor="fullName">Full Name</label>
-            <input
-              type="text"
-              id="fullName"
-              name="fullName"
-              value={formData.fullName}
-              onChange={handleInputChange}
-            />
-            {errors.fullName && <p className="error">{errors.fullName}</p>}
-          </div>
-          <div className="form-row">
-            <div className="form-group">
-              <label htmlFor="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                value={formData.email}
-                onChange={handleInputChange}
-              />
-              {errors.email && <p className="error">{errors.email}</p>}
+      </section>
+      <section className='second2'>
+        <div className='container3'>
+          <h3 className='tt'>CONTACT US</h3>
+          <h1 className="form-title">Get In Touch</h1>
+        </div>
+        <div className='main-container'>
+          <div className='child-container'>
+            <h1>Dial In</h1>
+            <div className='details'>
+              <h3>+91 75068 43435</h3>
             </div>
-            <div className="form-group">
-              <label htmlFor="mobileNumber">Mobile Number</label>
-              <input
-                type="tel"
-                id="mobileNumber"
-                name="mobileNumber"
-                value={formData.mobileNumber}
-                onChange={handleInputChange}
-              />
-              {errors.mobileNumber && <p className="error">{errors.mobileNumber}</p>}
+            <div className='details'>
+              <h3>+91 77387 89829</h3>
             </div>
           </div>
-          <div className="form-group">
-            <label htmlFor="cv">Upload CV</label>
-            <input
-              type="file"
-              id="cv"
-              name="cv"
-              onChange={handleFileChange}
-              accept=".pdf"
-            />
-            <p className="file-info">Upload only pdf file allowed & file size will be less than 2MB</p>
-            {errors.cv && <p className="error">{errors.cv}</p>}
+          <div className='child-container'>
+            <h1>Email Id</h1>
+              <div className='details'>
+                  <a href='mailto:jobs@marcosquay.com'>jobs@marcosquay.com</a>
+              </div>
+              <div className='details'>
+                  <a href='mailto:info@marcosquay.com'>info@marcosquay.com</a>
+              </div>
+              <div className='details'>
+                  <a href='mailto:reena.sanghvi@marcosquay.com'>reena.sanghvi@marcosquay.com</a>
+              </div>
           </div>
-          <button type="submit" className="submit-button">Submit Now</button>
-        </form>
-      )}
+          <div className='child-container'>
+            <h1>Social Media</h1>
+              <div className='details'>
+                  <FaWhatsapp />
+                  <a target = "blank" title='Click to contact us on whatsapp' href='https://api.whatsapp.com/send/?phone=7738789829&text&type=phone_number&app_absent=0'>Whatsapp</a>
+              </div> 
+              <div className='details'>
+                  <FaFacebook />
+                  <a target = "blank" title="Click to view Facebook link of Marcos Quay" href='https://www.facebook.com/marcosquay'>Facebook</a>
+              </div> 
+              <div className='details'>
+                  <FaInstagram />
+                  <a target = "blank" title="Click to view Instagram link of Marcos Quay" href='https://www.instagram.com/marcosquay/'>Instagram</a>
+              </div>
+              <div className='details'>
+                  <FaLinkedin />
+                  <a target = "blank" title="Click to view LinkedIn link of Marcos Quay" href='https://www.linkedin.com/company/marcosquay'>LinkedIn</a>
+              </div>
+              <div className='details'>
+                  <FaYoutube />
+                  <a target = "blank" title="Click to view Youtube link of Marcos Quay" href='https://www.youtube.com/channel/UCKvDIPPrvaVHjtqcr-ZYJow?view_as=subscribery'><i class="fab fa-youtube"></i>Youtube</a>
+              </div>  
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
