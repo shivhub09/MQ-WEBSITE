@@ -150,59 +150,64 @@ input[type="file"]::file-selector-button {
 
 
 
-
-.second2 {
-  width: 90%;
+.content-container {
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  padding-top: 100px; /* Adjust this based on your navbar height */
 }
-
-
+.second2 {
+  width: 90%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
 
 .container3 {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
   width: 100%;
+  height: 100%;
 }
-
 
 .main-container {
-  width: 100%;
+  width: 90%;
+  height: 90%;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+  padding: 0;
 }
-
 
 .child-container {
   display: flex;
-  width: 10%;
   height: 100%;
   flex-direction: column;
-  flex: 1;
   align-items: center;
-  border: 1px solid rgb(187, 187, 187);
+  border: 1px solid rgb(223, 223, 223);
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 32px;
 }
 
-
 .child-container h1 {
-  font: bold;
-  color: black;
+  font-size: 24px;
   font-weight: 600;
+  color: black;
 }
 
 .details {
   display: flex;
   flex-direction: row;
   background: #0d57a41a;
-  margin: 16px 0px 0px 0px;
-  padding: 10px 0px;
+  margin-top: 16px;
+  padding: 10px 0;
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -210,12 +215,15 @@ input[type="file"]::file-selector-button {
   border-radius: 10px;
 }
 
-
 .details a {
   margin-left: 6px;
   text-decoration: none;
   color: #0c55a5;
   font-size: 16px;
-  font-family: "Poppins", system-ui;
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
+}
+
+.footer-container {
+  height: 10%;
 }
