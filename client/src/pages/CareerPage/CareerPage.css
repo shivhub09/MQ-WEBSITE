@@ -1,29 +1,63 @@
-.form-container {
-  max-width: 950px;
-  margin: 60px auto;
-  padding: 35px;
-  background-color: white;
-  border-radius: 8px;
-  width: 100%;
-  /* margin-top: 0%;
-  height: 20vh;
-  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -ms-overflow-style: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+.container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+  scrollbar-width: none;
+}
+
+section {
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: end;
   align-items: center;
-  font-family: sans-serif */
-    }
-.container-2{
-    padding: 20px;
+  justify-content: center;
+  scroll-snap-align: start;
+  /* background-color: #f8f8f8; */
+  /* padding: 40px 20px; */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  /* transform: translateY(50px); */
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* When the section becomes visible */
+section.visible {
+  opacity: 1;
+  /* transform: translateY(0); Reset the position */
+}
+
+.first{
+  width: 70%;
+}
+
+.form-container {
+  width: 90%;
+  margin: 60px auto;
+  padding: 35px;
+  border-radius: 8px;
+  width: 100%;
+}
+.container-2 {
+  padding: 20px;
 }
 .form-title {
   font-size: 36px;
-  font-weight: 500;
+  font-weight: bold;
   text-align: center;
-  color: #D92027;
-  margin-bottom: 20px;
+  color: #d92027;
   font-family: "Poppins", system-ui;
+  
 }
 
 .form-group {
@@ -64,16 +98,16 @@ input[type="file"] {
   padding: 3px;
   width: 40%;
 }
-input[type=file]::file-selector-button {
-    margin-right: 20px;
-    border: none;
-    background: #F9FAFB;
-    padding: 10px 20px;
-    color: black;
-    cursor: pointer;
-    transition: background .2s ease-in-out;
-    height:100%;
-  }
+input[type="file"]::file-selector-button {
+  margin-right: 20px;
+  border: none;
+  background: #f9fafb;
+  padding: 10px 20px;
+  color: black;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+  height: 100%;
+}
 
 .file-info {
   font-size: 12px;
@@ -91,7 +125,7 @@ input[type=file]::file-selector-button {
 .submit-button {
   width: 100%;
   padding: 10px;
-  background-color: #0C55A5;
+  background-color: #0c55a5;
   color: white;
   border: none;
   border-radius: 4px;
@@ -112,57 +146,76 @@ input[type=file]::file-selector-button {
   border-radius: 4px;
   text-align: center;
 }
-.second2{
+
+
+
+
+
+.second2 {
+  width: 90%;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
-.container3{
-  
+
+
+
+.container3 {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
 }
-.child-container{
+
+
+.main-container {
+  width: 100%;
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.child-container {
+  display: flex;
+  width: 10%;
+  height: 100%;
   flex-direction: column;
-  flex:1;
+  flex: 1;
   align-items: center;
   border: 1px solid rgb(187, 187, 187);
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding:32px;
-  margin: 15px;
+  padding: 32px;
 }
-.child-container h1{
+
+
+.child-container h1 {
   font: bold;
   color: black;
   font-weight: 600;
 }
-#Dial h3{
-  font-size: 16px;
-  font-family: "Poppins", system-ui;
-}
-.details{
+
+.details {
   display: flex;
   flex-direction: row;
-  background: #0D57A41A;
+  background: #0d57a41a;
   margin: 16px 0px 0px 0px;
   padding: 10px 0px;
-  width:100%;
+  width: 100%;
   align-items: center;
   justify-content: center;
-  color:#0C55A5;
+  color: #0c55a5;
   border-radius: 10px;
 }
-.details a{
+
+
+.details a {
   margin-left: 6px;
   text-decoration: none;
-  color: #0C55A5;
+  color: #0c55a5;
   font-size: 16px;
   font-family: "Poppins", system-ui;
   font-weight: 600;
-}
-.main-container{
-  padding: 0px 120px;
 }
