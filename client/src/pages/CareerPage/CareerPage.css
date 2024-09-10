@@ -113,7 +113,6 @@ input[type=file]::file-selector-button {
   text-align: center;
 }
 .second2{
-  height:40vh;
   display: flex;
   flex-direction: column;
 }
@@ -140,6 +139,9 @@ input[type=file]::file-selector-button {
   font: bold;
   color: black;
   font-weight: 700;
+}
+#Dial h3{
+  font-weight: 500;
 }
 .details{
   display: flex;
