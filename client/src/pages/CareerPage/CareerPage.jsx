@@ -118,10 +118,10 @@ const CareerPage = () => {
         <div className='child-container'>
           <h1>Dial In</h1>
           <div className='details' id="Dial">
-            <h3>+91 75068 43435</h3>
+            <a href="tel:+917506843435">+91-75068 43435</a>
           </div>
           <div className='details' id="Dial">
-            <h3>+91 77387 89829</h3>
+            <a href="tel:+917738789829">+91-77387 89829</a>
           </div>
         </div>
         <div className='child-container'>

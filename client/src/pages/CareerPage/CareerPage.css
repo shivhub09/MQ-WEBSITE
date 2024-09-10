@@ -118,42 +118,42 @@ input[type=file]::file-selector-button {
 }
 .container3{
   
-  max-width: 1000px;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
 }
-
 .child-container{
   display: flex;
   flex-direction: column;
   flex:1;
   align-items: center;
-  border: 2px solid grey;
-  border-radius: 10px;
-  box-shadow: #898e8c;
-  padding:24px;
+  border: 1px solid rgb(187, 187, 187);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding:32px;
+  margin: 15px;
 }
 .child-container h1{
   font: bold;
   color: black;
-  font-weight: 700;
+  font-weight: 600;
 }
 #Dial h3{
-  font-weight: 500;
+  font-size: 16px;
+  font-family: sans-serif;
 }
 .details{
   display: flex;
   flex-direction: row;
   background: #0D57A41A;
   margin: 16px 0px 0px 0px;
-  padding: 6px 0px;
+  padding: 10px 0px;
   width:100%;
   align-items: center;
   justify-content: center;
   color:#0C55A5;
-  border-radius: 3px;
+  border-radius: 10px;
 }
 .details a{
   margin-left: 6px;
