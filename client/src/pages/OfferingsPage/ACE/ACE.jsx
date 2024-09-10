@@ -1,9 +1,30 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './ACE.css';
 import ACE2 from './Our Offerings - ACE 2.png';
 import ACE3 from './Our Offerings - ACE 3.png';
 
 const ACE = () => {
+
+  useEffect(() => {
+    const sections = document.querySelectorAll("section");
+
+    const options = {
+      threshold: 0.5,
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    }, options);
+
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+  }, []);
+
   return (
     <div className="container">
       <section className='one'>
@@ -25,7 +46,6 @@ const ACE = () => {
             events and recreaonal acvies, including the Parents League, Inter Marcos
             Quay Tournament, Students League, Yoga Day, Sports Day, Dads League, and
             many more.
-
           </div>
 
           <div className="ace-container-one-content-image">
@@ -39,9 +59,6 @@ const ACE = () => {
           </div>
         </div>
       </section>
-
-
-      <section className='two'></section>
     </div>
   );
 }

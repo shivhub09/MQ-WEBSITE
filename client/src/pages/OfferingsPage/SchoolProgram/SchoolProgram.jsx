@@ -1,4 +1,4 @@
-import React from 'react'
+import React , {useEffect}from 'react'
 import './SchoolProgram.css'
 import OurOfferingsImage1 from './Our Offerings - Smart Start 2.png';
 import OurOfferingsImage2 from './Our Offerings - Smart Start 3.png';
@@ -7,7 +7,25 @@ import WhyChooseUs from './Website Our Offerings - Why choose us.png';
 import OurProcess from './Our Process.png';
 
 const SchoolProgram = () => {
+  useEffect(() => {
+    const sections = document.querySelectorAll("section");
 
+    const options = {
+      threshold: 0.5,
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    }, options);
+
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+  }, []);
   return (
     <div className='container'>
       <section className='one'>
