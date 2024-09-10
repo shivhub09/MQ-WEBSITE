@@ -3,7 +3,7 @@ import './Footer.css'
 
 const Footer = () => {
   return (
-    <div className="footer-container">
+    <div className="footer-main-container">
       <h3 className='footer-line'>© 2024 Marcos Quay. All rights reserved.</h3>
       <div className="social-media-footer">
         <img src="https://cdn-icons-png.flaticon.com/512/20/20673.png" alt="Facebook" />
