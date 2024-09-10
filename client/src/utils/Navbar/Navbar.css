@@ -69,7 +69,7 @@ html, body {
   display: none;
   position: absolute;
   background-color: white;
-  min-width: 250px;
+  width: 200px;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1;
   left: 0;
@@ -78,7 +78,6 @@ html, body {
   border-radius: 12px;
   font-family: "Poppins", system-ui;
   padding: 10px;
-
 }
 
 .navbar-list .list-item:hover .dropdown-content {
