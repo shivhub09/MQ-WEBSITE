@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import logo from './marcos-quay-logo.png';
 import './Navbar.css';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const navigate = useNavigate(); // Initialize the navigate hook
 
   const toggleDrawer = () => {
     setIsOpen(!isOpen);
@@ -27,25 +29,24 @@ const Navbar = () => {
       <div className={`navbar-content ${isOpen ? 'open' : ''}`}>
         <div className="list-items">
           <ul className="navbar-list">
-            <li className="list-item"><a href="/home">Home</a></li>
-            <li className="list-item"><a href="/aboutUs">About Us</a></li>
+            <li className="list-item" onClick={() => navigate('/home')}>Home</li>
+            <li className="list-item" onClick={() => navigate('/aboutUs')}>About Us</li>
             <li className="list-item">
-  Our Offerings
-  <div className="dropdown-content">
-    <a href="/ourOfferings/in-school-program">In School Program</a>
-    <a href="/ourOfferings/sports-academy">Sports Academy</a>
-    <a href="/ourOfferings/ace">Ace</a>
-    <a href="/ourOfferings/brand-sponsorship">Brand and Sponsorship</a>
-  </div>
-</li>
-
-            <li className="list-item"><a href="/gallery">Gallery</a></li>
-            <li className="list-item"><a href="/career">Career</a></li>
-            <li className="list-item"><a href="/contact">Contact</a></li>
+              Our Offerings
+              <div className="dropdown-content">
+                <div onClick={() => navigate('/ourOfferings/in-school-program')}>In School Program</div>
+                <div onClick={() => navigate('/ourOfferings/sports-academy')}>Sports Academy</div>
+                <div onClick={() => navigate('/ourOfferings/ace')}>Ace</div>
+                <div onClick={() => navigate('/ourOfferings/brand-sponsorship')}>Brand and Sponsorship</div>
+              </div>
+            </li>
+            <li className="list-item" onClick={() => navigate('/gallery')}>Gallery</li>
+            <li className="list-item" onClick={() => navigate('/career')}>Career</li>
+            <li className="list-item" onClick={() => navigate('/contact')}>Contact</li>
           </ul>
         </div>
 
-        <input type="button" className='enrolNowButton' value="ENROLL NOW" onClick={handleEnrollClick} />
+        <input type="button" className="enrolNowButton" value="ENROLL NOW" onClick={handleEnrollClick} />
       </div>
 
       <button className="hamburger" onClick={toggleDrawer}>

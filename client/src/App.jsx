@@ -1,4 +1,4 @@
-import './App.css'
+import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage/HomePage';
 import GalleryPage from './pages/GalleryPage/GalleryPage';
@@ -13,29 +13,25 @@ import SportsAcademy from './pages/OfferingsPage/SportsAcademy/SportsAcademy';
 import ACE from './pages/OfferingsPage/ACE/ACE';
 import BrandSponsorship from './pages/OfferingsPage/BrandSponsorship/BrandSponsorship';
 
-
 function App() {
-
   return (
-    <>
-      <Navbar />
-      <Router>
-        <Routes>
-          <Route path="/" element={<HomePage></HomePage>} />
-          <Route path="/home" element={<HomePage></HomePage>} />
-          <Route path="/aboutUs" element={<AboutUsPage></AboutUsPage>}></Route>
-          <Route path="/gallery" element={<GalleryPage></GalleryPage>}></Route>
-          <Route path="/contact" element={<ContactPage></ContactPage>}></Route>
-          <Route path="/career" element={<CareerPage></CareerPage>}></Route>
-          <Route path="/ourOfferings/in-school-program" element={<SchoolProgram></SchoolProgram>}></Route>
-          <Route path="/ourOfferings/sports-academy" element={<SportsAcademy></SportsAcademy>}></Route>
-          <Route path="/ourOfferings/ace" element={<ACE/>}></Route>
-          <Route path="/ourOfferings/brand-sponsorship" element={<BrandSponsorship></BrandSponsorship>}></Route>
-        </Routes>
-      </Router>
-    </>
-
-  )
+    <Router>
+      <Navbar />  {/* Move Navbar inside the Router */}
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/home" element={<HomePage />} />
+        <Route path="/aboutUs" element={<AboutUsPage />} />
+        <Route path="/gallery" element={<GalleryPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/career" element={<CareerPage />} />
+        <Route path="/ourOfferings/in-school-program" element={<SchoolProgram />} />
+        <Route path="/ourOfferings/sports-academy" element={<SportsAcademy />} />
+        <Route path="/ourOfferings/ace" element={<ACE />} />
+        <Route path="/ourOfferings/brand-sponsorship" element={<BrandSponsorship />} />
+      </Routes>
+      {/* <Footer /> */}
+    </Router>
+  );
 }
 
-export default App
+export default App;
