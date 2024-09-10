@@ -226,4 +226,5 @@ input[type="file"]::file-selector-button {
 
 .footer-container {
   height: 10%;
+  width: 100%;
 }
