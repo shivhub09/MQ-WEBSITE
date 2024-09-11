@@ -28,12 +28,13 @@ html, body {
   height: 20px; 
 }
 
+
+
 .navbar-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-family: "Poppins", system-ui;
-
 }
 
 .navbar-list {
@@ -41,7 +42,6 @@ html, body {
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-right: 20px;
 }
 
 .navbar-list a {
@@ -53,11 +53,9 @@ html, body {
 .navbar-list .list-item {
   margin: 0 15px;
   font-size: 16px;
-  /* font-weight: bold; */
   color: black;
   cursor: pointer;
   position: relative;
-  
 }
 
 .navbar-list .list-item a:hover {
@@ -103,6 +101,7 @@ html, body {
 .enrolNowButton {
   background-color: transparent;
   color: #007bff;
+  padding: 0;
   padding: 10px 20px;
   border: 2px solid #007bff;
   border-radius: 12px;
