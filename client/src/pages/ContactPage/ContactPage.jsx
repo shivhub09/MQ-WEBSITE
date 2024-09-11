@@ -1,4 +1,4 @@
-import React,{useEffect} from 'react'
+import React,{useEffect, useState} from 'react'
 import './ContactPage.css'
 import { CiLocationOn } from "react-icons/ci"; // Import relevant icons
 import { IoCallOutline } from "react-icons/io5";
@@ -24,6 +24,26 @@ const ContactPage = () => {
       observer.observe(section);
     });
   }, []);
+  const [formData, setFormData] = useState({
+    fullName: '',
+    email: '',
+    mobileNumber: '',
+    message: ''
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prevState => ({
+      ...prevState,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log('Form submitted:', formData);
+    // Here you would typically send the data to a server
+  };
   return (
     <div className='container'>
       <section className='cpone'>
@@ -90,11 +110,64 @@ const ContactPage = () => {
 
       
       </section>
-      <section className='cptwo'>
-        <div className="cpcontainer">
-
-        </div>
+      <div className="cpcontainertwo">
+        <section className='cptwo'>
+          <div className="cpcontainer-form">
+            <h1>Contact Us</h1>
+            <p>We'd love to talk about how we can help you.</p>
+          </div>
+          <div className="contact-form-container1">
+            <h2>Fill in the form</h2>
+            <form onSubmit={handleSubmit}>
+              <div className="form-group1">
+                <label htmlFor="fullName">Full Name</label>
+                <input
+                  id="fullName"
+                  name="fullName"
+                  value={formData.fullName}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
+              <div className="form-row1">
+                <div className="form-group1">
+                  <label htmlFor="email">Email</label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
+                <div className="form-group1">
+                  <label htmlFor="mobileNumber">Mobile Number</label>
+                  <input
+                    id="mobileNumber"
+                    name="mobileNumber"
+                    type="tel"
+                    value={formData.mobileNumber}
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
+              </div>
+              <div className="form-group1">
+                <label htmlFor="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
+              <button type="submit" className="submit-button">Send inquiry</button>
+            </form>
+          </div>
       </section>
+    </div>
 </div>
   )
 }
