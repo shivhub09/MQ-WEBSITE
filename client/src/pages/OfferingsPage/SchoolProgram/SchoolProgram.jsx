@@ -1,4 +1,4 @@
-import React , {useEffect}from 'react'
+import React, { useEffect } from 'react'
 import './SchoolProgram.css'
 import OurOfferingsImage1 from './Our Offerings - Smart Start 2.png';
 import OurOfferingsImage2 from './Our Offerings - Smart Start 3.png';
@@ -38,10 +38,7 @@ const SchoolProgram = () => {
           </div>
           <div className="schoolProgram-container-one">
             <div className="container-one-content">
-              Our Smart Start program isn't just about play — it's about laying the groundwork for a lifetime
-              of athletic success. Designed specifically for pre-primary students, this program focuses on
-              essential skills. Through age-appropriate activities and playful learning, children develop
-              these essential skills, setting the stage for future success in physical ed ucation and sports.
+              Our Smart Start program isn't just about play – it's about laying the groundwork for a lifetime of athletic success. Designed specifically for pre-primary students, this program focuses on essential skills. Through age-appropriate activities and playful learning, children develop these essential skills, setting the stage for future success in physical education and sports.
             </div>
             <div className="container-one-image">
               <img src={OurOfferingsImage1} alt="" />
@@ -52,12 +49,9 @@ const SchoolProgram = () => {
               <h1>Key Focus Areas</h1>
               <br />
               <ul className="content-list-items">
-                <li> <b>Agility, Balance & Coordination:</b> Essenal skills for physical development.</li>
-                <li><b>Fine and Gross Motor Skills:</b> Building a strong foundaon for future success.</li>
-                <li><b>Introducon to Fundamental Skills: </b>Engaging in movements fundamental to mul-
-                  sports such as catching, throwing, changing direcons, and spaal awareness.
-                  In School Program
-                </li>
+                <li> <b>Agility, Balance & Coordination:</b> Essential skills for physical development.</li>
+                <li><b>Fine and Gross Motor Skills:</b> Building a strong foundation for future success</li>
+                <li><b>Introduction to Fundamental Skills: </b>Engaging in movements fundamental to multi-sports such as catching, throwing, changing directions, and spatial awareness.</li>
               </ul>
             </div>
             <div className="container-one-image">
@@ -76,10 +70,7 @@ const SchoolProgram = () => {
           </div>
           <div className="schoolProgram-container-one">
             <div className="container-one-content">
-              Starng from Grade 1, our Acve PE program enhances physical literacy and mul-sport skills
-              through a structured and engaging curriculum. With a focus on health, fitness, and sport-
-              specific training, students are introduced to a variety of sports, promong overall wellness
-              and a love for physical acvity.
+              Starting from Grade 1, our Active PE program enhances physical literacy and multi-sport skills through a structured and engaging curriculum. With a focus on health, fitness, and sport-specific training, students are introduced to a variety of sports, promoting overall wellness and a love for physical activity.
             </div>
             <div className="container-one-image">
               <img src={OurOfferingsImage1} alt="" />
@@ -125,7 +116,7 @@ const SchoolProgram = () => {
                 <li><b>Comprehensive Equipment:</b> All necessary sports and physical education gear included.</li>
                 <li><b>Structured Curriculum:</b> Fitness-based activities with a focus on fun and learning.</li>
                 <li><b>Optimal Use of School Infrastructure:</b> Leveraging sports facilities to create a Sports Academy for post-school hours.</li>
-                <li><b>Upgrade and Maintain School Sports Infrastructure:</b> Enhancing the quality of sports facilities.</li>
+                <li><b>Upgrade and Maintain School Infrastructure:</b> Enhancing the quality of sports facilities.</li>
                 <li><b>Boost Admissions through Sports Infrastructure:</b> Leveraging state-of-the-art sports facilities to attract new students.</li>
               </ul>
             </div>
@@ -144,13 +135,7 @@ const SchoolProgram = () => {
             </div>
             <div className="ourProcess-container-one-content">
               <h1>Our Process</h1>
-              <p>At Marcos Quay, we connually advance our curriculum, training, and
-                coaching methods. We are commied to providing a high-quality
-                curriculum and well-trained coaches. We regularly review and adjust
-                our curriculum to meet the needs of schools and students. Our focus on
-                coach training ensures effecve curriculum delivery, first aid, and injury
-                prevenon proficiency, and the ability to assess student performance
-                accurately</p>
+              <p>At Marcos Quay, we continually advance our curriculum, training, and coaching methods. We are committed to providing a high-quality curriculum and well-trained coaches. We regularly review and adjust our curriculum to meet the needs of schools and students. Our focus on coach training ensures effective curriculum delivery, first aid, and injury prevention proficiency, and the ability to assess student performance accurately.</p>
             </div>
 
           </div>

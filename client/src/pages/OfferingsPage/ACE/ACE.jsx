@@ -34,18 +34,9 @@ const ACE = () => {
 
         <div className="ace-container-one-content">
           <div className="ace-container-one-content-para">
-            ACE stands for Acvies for Connuous Enrichment, it is a program put in place to
-            go above and beyond just sports and to bring a unique experience for students,
-            parents, schools, and all our stakeholders.
-            We think it is important to involve all stakeholders and that communies have
-            great influence. Through organizing enjoyable and leisurely events for parents,
-            educators, and all students of Marcos Quay, we want to foster a sense of
-            community and enhance the quality of services we offer.
-            To make sure that everyone involved in our ACE program understands the value of
-            staying in shape and enjoys playing sports, we host a variety of entertaining
-            events and recreaonal acvies, including the Parents League, Inter Marcos
-            Quay Tournament, Students League, Yoga Day, Sports Day, Dads League, and
-            many more.
+            ACE stands for Activities for Continuous Enrichment, it is a program put in place to go above and beyond just sports and to bring a unique experience for students, parents, schools, and all our stakeholders.
+            We think it is important to involve all stakeholders and that communities have great influence. Through organizing enjoyable and leisurely events for parents, educators, and all students of Marcos Quay, we want to foster a sense of community and enhance the quality of services we offer.
+            To make sure that everyone involved in our ACE program understands the value of staying in shape and enjoys playing sports, we host a variety of entertaining events and recreational activities, including the Parents League, Inter Marcos Quay Tournament, Students League, Yoga Day, Sports Day, Dads League, and many more.
           </div>
 
           <div className="ace-container-one-content-image">

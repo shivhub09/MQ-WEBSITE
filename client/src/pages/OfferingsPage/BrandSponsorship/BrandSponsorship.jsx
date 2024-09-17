@@ -38,14 +38,7 @@ const BrandSponsorship = () => {
 
           <div className="brandSponsorship-container-two-content-para">
             <p>
-              Branding and sponsorship services are essential components of modern marketing strategies. At
-              Marcos Quay, we offer comprehensive solutions and a platform for brands to reach out to their target
-              audience. From crafting compelling brand identities to securing impactful sponsorships, our services
-              aim to enhance brand recognition, drive engagement, and maximize ROI. Our approach combines
-              creative innovation with data-driven insights to deliver customized strategies that resonate with target
-              audiences and align with overarching business objectives. Whether it’s establishing brand positioning,
-              negotiating sponsorship deals, or activating cross-channel marketing campaigns, we’re dedicated to
-              empowering brands to stand out and thrive in today’s competitive landscape.
+            Branding and sponsorship services are essential components of modern marketing strategies. At Marcos Quay, we offer comprehensive solutions and a platform for brands to reach out to their target audience. From crafting compelling brand identities to securing impactful sponsorships, our services aim to enhance brand recognition, drive engagement, and maximize ROI. Our approach combines creative innovation with data-driven insights to deliver customized strategies that resonate with target audiences and align with overarching business objectives. Whether it’s establishing brand positioning, negotiating sponsorship deals, or activating cross-channel marketing campaigns, we’re dedicated to empowering brands to stand out and thrive in today’s competitive landscape.
             </p>
           </div>
         </div>

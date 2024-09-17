@@ -1,4 +1,4 @@
-import React , {useEffect} from 'react';
+import React, { useEffect } from 'react';
 import HomeImage from './components/images/Website Home2.jpg';
 import HomePage1 from './components/images/About-Us-1.png';
 import HomePage2 from './components/images/About-Us-2.png';
@@ -48,7 +48,7 @@ const HomePage = () => {
           <div className="what-we-do-container-content-box">
             <div className="what-we-do-container-content">
               <p>
-                Welcome to MarcosQuay where we empower the next generation through comprehensive sports education. Partnering with schools, we deliver expert-led programs that enhance physical skills, teamwork, and sportsmanship. Join us in fostering a healthier, more active future for our kids.
+                Welcome to Marcos Quay, where we empower the next generation through comprehensive sports education. Partnering with schools, we deliver expert-led programs that enhance physical skills, teamwork, and sportsmanship. Join us in fostering a healthier, more active future for our kids
               </p>
 
               <ul className="content-list-items">
