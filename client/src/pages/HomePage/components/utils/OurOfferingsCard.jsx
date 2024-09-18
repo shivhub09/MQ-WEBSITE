@@ -10,7 +10,7 @@ const OurOfferingsCard = ({ img, title, content, url }) => {
       <div className="ourOfferingsCard-content">
         <h3>{title}</h3>
         <p>{content}</p>
-        <a href={url} className="ourOfferingsCard-link">Know More &#8250;</a>
+        {/* <a href={url} className="ourOfferingsCard-link">Know More &#8250;</a> */}
       </div>
     </div>
   );

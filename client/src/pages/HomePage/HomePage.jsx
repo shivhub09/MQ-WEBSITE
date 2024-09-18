@@ -10,6 +10,11 @@ import TestimonialCard from './components/utils/TestimonialCard';
 import TestimonialCarousel from './components/utils/TestimonialCarousel';
 import Footer from '../../utils/Footer/Footer';
 
+import ACEImage from './components/images/Website Home - ACE.png';
+import BrandingImage from './components/images/Website Home - Branding & Sponsorship.png';
+import SchoolImage from './components/images/Website Home - In School.png';
+import AcademyImage from './components/images/Website Home - Sports Academy.png';
+
 const HomePage = () => {
 
   useEffect(() => {
@@ -74,10 +79,10 @@ const HomePage = () => {
         <div className="ourOfferings-content">
           <h1 className="ourOfferings-container-title">Our Offerings</h1>
           <div className="ourOfferings-card-container">
-            <OurOfferingsCard img={HomePage1} title="In School Programs" content="Aims to inspire a culture of fitness through scientifically researched & result driven programs with a curriculum that is exciting & engaging every student." url="This is the url" />
-            <OurOfferingsCard img={HomePage1} title="Sports Academy" content="Marcos Quay's Sports Academy provides fun, accessible sports training for children, emphasizing fundamental skills and lifelong passion through certified coaches and diverse activities." url="This is the url" />
-            <OurOfferingsCard img={HomePage1} title="ACE" content="A program dedicated to delivering an unparalleled experience for students, parents, schools, and all stakeholders involved." url="This is the url" />
-            <OurOfferingsCard img={HomePage1} title="Branding and Sponsorship" content="Partners benefit from brand exposure, targeted seminars, sampling opportunities, and increased foot traffic and web traffic." url="This is the url" />
+            <OurOfferingsCard img={SchoolImage} title="In School Programs" content="Aims to inspire a culture of fitness through scientifically researched & result driven programs with a curriculum that is exciting & engaging every student." url="This is the url" />
+            <OurOfferingsCard img={AcademyImage} title="Sports Academy" content="Marcos Quay's Sports Academy provides fun, accessible sports training for children, emphasizing fundamental skills and lifelong passion through certified coaches and diverse activities." url="This is the url" />
+            <OurOfferingsCard img={ACEImage} title="ACE" content="A program dedicated to delivering an unparalleled experience for students, parents, schools, and all stakeholders involved." url="This is the url" />
+            <OurOfferingsCard img={BrandingImage} title="Branding and Sponsorship" content="Partners benefit from brand exposure, targeted seminars, sampling opportunities, and increased foot traffic and web traffic." url="This is the url" />
           </div>
         </div>
 
