@@ -2,6 +2,7 @@ import React from 'react'
 import './GalleryPage.css';
 import Footer from '../../utils/Footer/Footer';
 
+
 const GalleryPage = () => {
 
   return (
