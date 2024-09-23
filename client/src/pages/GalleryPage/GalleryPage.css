@@ -1,6 +1,6 @@
 .row{
     margin-top: 0%;
-    height: 30vh;
+    min-height: 30vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -28,14 +28,14 @@
     justify-content: space-between; /* Evenly space the columns */
     align-items: stretch; /* Ensure containers are of equal height */
     width: 100%; /* Full width */
-    
+    flex-wrap: wrap;
     padding: 40px 120px;
   }
   
 .gallery-child-container {
-flex: 1; /* Each child container takes up equal space */
-margin: 5px;
-padding: 0;
+    flex: 1 1 calc(25% - 10px); /* Each child container takes up equal space */
+    margin: 5px;
+    padding: 0;
 }
 
 .gallery-child-container:first-child {
@@ -57,3 +57,46 @@ margin-right: 0; /* Remove margin on the last container */
     transform: scale(1.01);
 }
 
+@media (max-width: 768px) {
+    .row{
+        margin-top: 0%;
+        width: 100%;    
+        display: flex;  
+        flex-direction: column;
+        align-items: center;
+        font-family: sans-serif;
+        padding-top: 66px;
+    }
+    
+    .row h1{
+        color: #0C55A5;
+        font-size: 30px;
+        font-family: "Poppins", system-ui;
+        text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+        font-weight: 600;
+        margin: 0 auto;
+        
+    }
+    .row p{
+        width:90%;
+        color: #4B5563;
+        text-align: center;
+        font-family: "Poppins", system-ui;
+        font-size: 16px;
+    
+    }
+    .gallery-main-container {
+        display: flex;
+        justify-content: space-between; /* Evenly space the columns */
+        align-items: stretch; /* Ensure containers are of equal height */
+        width: 100%; /* Full width */
+        margin-top: 0px;
+        padding: 40px 40px;
+      }
+    .gallery-child-container {
+        flex: 1 1 calc(50% - 10px); /* Each child container takes up equal space */
+        margin: 5px;
+        padding: 0;
+    }
+    
+}

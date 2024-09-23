@@ -71,10 +71,10 @@ const HomePage = () => {
         <div className="ourOfferings-content">
           <h1 className="ourOfferings-container-title">Our Offerings</h1>
           <div className="ourOfferings-card-container">
-            <OurOfferingsCard img={SchoolImage} title="In School Programs" content="Aims to inspire a culture of fitness through scientifically researched & result driven programs with a curriculum that is exciting & engaging every student." url="This is the url" />
-            <OurOfferingsCard img={AcademyImage} title="Sports Academy" content="Marcos Quay's Sports Academy provides fun, accessible sports training for children, emphasizing fundamental skills and lifelong passion through certified coaches and diverse activities." url="This is the url" />
-            <OurOfferingsCard img={ACEImage} title="ACE" content="A program dedicated to delivering an unparalleled experience for students, parents, schools, and all stakeholders involved." url="This is the url" />
-            <OurOfferingsCard img={BrandingImage} title="Branding and Sponsorship" content="Partners benefit from brand exposure, targeted seminars, sampling opportunities, and increased foot traffic and web traffic." url="This is the url" />
+            <OurOfferingsCard img={SchoolImage} title="In School Programs" content="Aims to inspire a culture of fitness through scientifically researched & result driven programs with a curriculum that is exciting & engaging every student." url="in-school-program" />
+            <OurOfferingsCard img={AcademyImage} title="Sports Academy" content="Marcos Quay's Sports Academy provides fun, accessible sports training for children, emphasizing fundamental skills and lifelong passion through certified coaches and diverse activities." url="sports-academy" />
+            <OurOfferingsCard img={ACEImage} title="ACE" content="A program dedicated to delivering an unparalleled experience for students, parents, schools, and all stakeholders involved." url="ace" />
+            <OurOfferingsCard img={BrandingImage} title="Branding and Sponsorship" content="Partners benefit from brand exposure, targeted seminars, sampling opportunities, and increased foot traffic and web traffic." url="brand-sponsorship" />
           </div>
         </div>
 
