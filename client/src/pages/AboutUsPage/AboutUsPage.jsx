@@ -1,4 +1,4 @@
-import React,{useEffect} from 'react';
+import React, { useEffect } from 'react';
 import './AboutUsPage.css';
 import FounderImage from './Website About Us 7.png'
 import VisionImage from './Website About Us 3.png';
@@ -52,7 +52,7 @@ const AboutUsPage = () => {
                   <h2>Learn more about Marcos Quay</h2>
                 </div>
                 <div className="text-row-2">
-                  ▶️ Watch our Story
+                  <a href="https://www.youtube.com/watch?v=OZY9zMy4qqM">▶️ Watch our Story</a>
                 </div>
               </div>
             </div>
@@ -61,18 +61,19 @@ const AboutUsPage = () => {
               <div className="key-Initiative">
                 <h1>Key Initiatives</h1>
                 <ul>
-                  <li>Curriculum Design: Developed a scientifically backed sports curriculum for Indian schools.</li>
-                  <li>Coach Training: Brought trained UK coaches to India to train master coaches locally.</li>
-                  <li>Student Engagement: Structured programs to engage all students, enhancing overall performance in sports and life.</li>
+                  <li><b>Curriculum Design</b> : Developed a scientifically backed sports curriculum for Indian schools.</li>
+                  <li><b>Coach Training</b> : Brought trained UK coaches to India to train master coaches locally.</li>
+                  <li><b>Student Engagement</b> : Structured programs to engage all students, enhancing overall performance in sports and life.</li>
                 </ul>
               </div>
 
               <div className="career-pathWays">
                 <h1>Career Pathways and Leadership</h1>
                 <ul>
-                  <li>Comprehensive career guidance and leadership programs.</li>
-                  <li>Opportunities for hands-on learning and development.</li>
-                  <li>Focus on holistic growth and long-term success.</li>
+                  <li><b>Specialized Training </b>: Guides exceptional students towards advanced sports training at top global institutes.</li>
+                  <li><b>Industry Leadership</b> : Marcos Quay prioritizes sports and physical health for the next generation in India. Values and Impact</li>
+                  <li><b>Character Development</b> : Emphasizes skills and values like hard work, commitment, teamwork, and discipline.</li>
+                  <li><b>High-Quality Education</b> : Ensures excellence for students, parents, schools, and stakeholders.</li>
                 </ul>
               </div>
             </div>

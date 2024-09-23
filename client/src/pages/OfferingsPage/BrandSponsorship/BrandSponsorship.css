@@ -27,7 +27,6 @@ section {
   align-items: center;
   justify-content: center;
   scroll-snap-align: start;
-  /* padding: 40px 20px; */
 }
 
 .brandSponsorship-container-one {
@@ -37,42 +36,69 @@ section {
 
 .brandSponsorship-container-one h1 {
   font-family: "Poppins", sans-serif;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 600;
   margin-bottom: 20px;
 }
 
 .brandSponsorship-container-two-content {
-  width: 90%;
+  width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 20px;
 }
 
 .brandSponsorship-container-two-content-image {
-  width: 20%;
+  width: 80%;
+  max-width: 300px;
   transition: transform 0.3s ease-in-out;
 }
 
 .brandSponsorship-container-two-content-image img {
-  width: 100%; /* Increase image size */
+  width: 100%;
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .brandSponsorship-container-two-content-para {
-  width: 60%;
+  width: 90%;
   font-family: "Poppins", system-ui;
   font-weight: 300;
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #555;
   line-height: 1.6;
   letter-spacing: 0.5px;
   text-align: justify;
 }
 
+/* Responsive Styling */
+@media (min-width: 768px) {
+  .brandSponsorship-container-two-content {
+    flex-direction: row;
+  }
 
-.brandSponsorship--brands-container-two-content-image img{
-    width: 100%;
+  .brandSponsorship-container-two-content-image {
+    width: 30%;
+  }
+
+  .brandSponsorship-container-two-content-para {
+    width: 60%;
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .brandSponsorship-container-one h1 {
+    font-size: 2.5rem;
+  }
+
+  .brandSponsorship-container-two-content-image {
+    width: 25%;
+  }
+
+  .brandSponsorship-container-two-content-para {
+    font-size: 1.2rem;
+  }
 }
