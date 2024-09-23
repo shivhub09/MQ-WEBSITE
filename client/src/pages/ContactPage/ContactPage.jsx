@@ -71,7 +71,7 @@ const ContactPage = () => {
             </div>
             <div className='contact-us'>
               <h1>Our contacts</h1>
-              <div className='content'>  
+              <div className='content' id="low">  
                 <div className='cpicon'>
                   <IoCallOutline size={25} color={"grey"}/>
                 </div>
@@ -97,7 +97,7 @@ const ContactPage = () => {
             </div>
             <div className='cpicon2'>
                 <FaWhatsapp size={25} color={"grey"}/>
-                <div className='callus'>
+                <div className='callus' >
                   <p>Whatsapp us</p>
                 </div>
                 </div>
