@@ -67,8 +67,8 @@ section {
   text-align: justify;
 }
 
-.container-one-content ul {
-  list-style-type: none;
+.content-list-items li{
+  list-style-type: disc;
 }
 .container-one-image {
   width: 30%;

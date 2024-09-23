@@ -49,15 +49,17 @@
     margin-bottom: 16px; 
 }
 
-.ourOfferingsCard-link {
+.ourOfferingsCard-content h4{
     color: #d90429; 
     font-weight: 400;
     text-decoration: none; 
     display: inline-flex; 
     align-items: center;
     margin-top: 10px;
+    cursor: pointer;
 }
 
-.ourOfferingsCard-link:hover {
-    text-decoration: underline;
+.ourOfferingsCard-content h4:hover {
+    text-decoration: none;
+    
 }
