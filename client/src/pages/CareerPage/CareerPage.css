@@ -178,7 +178,7 @@ input[type="file"]::file-selector-button {
 
 .main-container {
   width: 90%;
-  height: 90%;
+  height: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -235,6 +235,12 @@ input[type="file"]::file-selector-button {
   .first{
     width: 100%;
     padding: 24px 16px;
+  }
+  .one{
+    height:100vh;
+  }
+  .two{
+    height:auto;
   }
   .form-container {
     width: 100%;

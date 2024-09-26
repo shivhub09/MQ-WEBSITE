@@ -100,3 +100,30 @@ section {
   letter-spacing: 1px;
   text-align: justify;
 }
+
+.chooseus-container-one-content {
+  width: 80%;
+  font-family: "Poppins", system-ui;
+  font-weight: 300;
+  font-size: 16px;
+  color: rgb(100, 100, 100);
+  letter-spacing: 1px;
+  text-align: justify;
+}
+
+.chooseus-container-one-content p{
+  font-family: "Poppins", system-ui;
+  font-weight: 300;
+  font-size: 16px;
+  color: rgb(100, 100, 100);
+  letter-spacing: 1px;
+  text-align: justify;
+}
+
+.why-choose-us-container-one-image{
+  width: 50%;
+
+}
+.why-choose-us-container-one-image img{
+  width: 90%;
+}
