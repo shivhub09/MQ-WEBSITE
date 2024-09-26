@@ -1,16 +1,28 @@
 .cpcontainer{
     display: flex;
     flex-direction: row;
-    width: 80%;
+    width: 100%;
+    justify-content: center;
+    padding: 0px 120px;
 }
 .cpchild-container{
-    flex:1;
     border-radius: 5px;
     margin: 25px;
 }
 .cpchild-container iframe{
     border: 0px;
     border-radius: 15px;
+}
+#right{
+    width: auto;
+}
+.emailbox{
+    display: flex;
+    flex-direction: row;
+}
+.callbox{
+    display: flex;
+    flex-direction: row;
 }
 .content p{
     display: flex;
@@ -26,7 +38,8 @@
   }
 .content{
     display: flex;
-
+    flex-direction: row;
+    justify-content: space-between;
 }
 .cpicon{
     margin-right: 12px;
@@ -190,18 +203,29 @@
         display: flex;
         flex-direction: column;
         width: 100%;
+        padding:0px;
     }
+    .cpone{
+        height: auto;
+    }
+   .cpchild-container{
+        margin: 25px 25px 0px 25px;
+        border-radius: 5px;
+   }
     .cpchild-container iframe{
         border: 0px;
         border-radius: 15px;
         width:100%;
-        margin-top: 196px;
+        margin-top: 75px;
     }
     .cpicon1{
         margin: 0px;
     }
+    .address-content p{
+        width: 100%;
+    }
     .emailus p{
-        margin-left: 0px;
+        margin-left: 15px;
     }
     .cpicon2{
         display: flex;
@@ -218,6 +242,16 @@
     }
     .whno a{
         margin-left: 40px;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+    }
+    #add{
+        display: flex;
+        flex-direction: row;
     }
     /*////////////////////*/
     .cpcontainertwo{
