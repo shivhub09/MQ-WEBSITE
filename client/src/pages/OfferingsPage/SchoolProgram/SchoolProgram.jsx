@@ -2,6 +2,8 @@ import React, { useEffect } from 'react'
 import './SchoolProgram.css'
 import OurOfferingsImage1 from './Our Offerings - Smart Start 2.png';
 import OurOfferingsImage2 from './Our Offerings - Smart Start 3.png';
+import ActivePEImage1 from './Our Offerings - Active PE 1.png';
+import ActivePEImage2 from './Our Offerings - Active PE 2.png';
 import WhyChooseUs from './Website Our Offerings - Why choose us.png';
 
 import OurProcess from './Our Process.png';
@@ -73,7 +75,7 @@ const SchoolProgram = () => {
               Starting from Grade 1, our Active PE program enhances physical literacy and multi-sport skills through a structured and engaging curriculum. With a focus on health, fitness, and sport-specific training, students are introduced to a variety of sports, promoting overall wellness and a love for physical activity.
             </div>
             <div className="container-one-image">
-              <img src={OurOfferingsImage1} alt="" />
+              <img src={ActivePEImage1} alt="" />
             </div>
           </div>
           <div className="schoolProgram-container-one">
@@ -92,7 +94,7 @@ const SchoolProgram = () => {
               </ul>
             </div>
             <div className="container-one-image">
-              <img src={OurOfferingsImage2} alt="" />
+              <img src={ActivePEImage2} alt="" />
             </div>
           </div>
 
@@ -107,7 +109,7 @@ const SchoolProgram = () => {
             <h1>Why Choose Us?</h1>
           </div>
           <div className="schoolProgram-container-one">
-            <div className="container-one-content">
+            <div className="chooseus-container-one-content">
               <br />
               <ul className="content-list-items">
                 <li><b>Certified and Experienced Coaches:</b> Professional guidance for optimal development.</li>
@@ -120,7 +122,7 @@ const SchoolProgram = () => {
                 <li><b>Boost Admissions through Sports Infrastructure:</b> Leveraging state-of-the-art sports facilities to attract new students.</li>
               </ul>
             </div>
-            <div className="container-one-image">
+            <div className="why-choose-us-container-one-image">
               <img src={WhyChooseUs} alt="" />
             </div>
           </div>

@@ -16,10 +16,13 @@ const OurOfferingsCard = ({ img, title, content, url }) => {
       </div>
 
       <div className="ourOfferingsCard-content">
-        <h3>{title}</h3>
-        <p>{content}</p>
+        <div className="ourOffeirngsCard-content-row-one">
+          <h3>{title}</h3>
+          <p>{content}</p>
+        </div>
+
         <h4
-          className="ourOfferingsCard-link" 
+          className="ourOfferingsCard-link"
           onClick={() => handleOnClick(url)} // pass as a callback
         >
           Know More &#8250;
