@@ -1,30 +1,9 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './ACE.css';
 import ACE2 from './Our Offerings - ACE 2.png';
 import ACE3 from './Our Offerings - ACE 3.png';
 
 const ACE = () => {
-
-  useEffect(() => {
-    const sections = document.querySelectorAll("section");
-
-    const options = {
-      threshold: 0.5,
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-        }
-      });
-    }, options);
-
-    sections.forEach(section => {
-      observer.observe(section);
-    });
-  }, []);
-
   return (
     <div className="container">
       <section className='one'>

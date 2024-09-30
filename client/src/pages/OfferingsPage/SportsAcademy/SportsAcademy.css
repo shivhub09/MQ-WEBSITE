@@ -3,12 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  -ms-overflow-style: none;
   font-family: "Poppins", system-ui, sans-serif;
-}
-
-*::-webkit-scrollbar {
-  display: none;
 }
 
 html, body {
@@ -17,10 +12,8 @@ html, body {
 }
 
 .container {
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
   height: 100vh;
-  scrollbar-width: none;
+  overflow-y: scroll;
 }
 
 /* Section layout and animations */
@@ -30,19 +23,12 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  scroll-snap-align: start;
   background-color: #f8f8f8;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  opacity: 0;
   transform: translateY(50px); /* Slide-in effect */
-  transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
-/* When section becomes visible */
-section.visible {
-  opacity: 1;
-  transform: translateY(0); /* Reset transform when visible */
-}
+
 
 /* Main container for sports program */
 .sports-program-container-one {
@@ -57,10 +43,8 @@ section.visible {
   font-size: 2.8rem;
   font-weight: 600;
   margin-bottom: 20px;
-  transition: color 0.3s ease;
 }
 
-/* Title styling */
 .sports-program-container-one h1 {
   font-size: 1.5rem;
   margin-bottom: 30px;
@@ -99,14 +83,12 @@ section.visible {
   text-align: justify;
 }
 
-
 .sports-program-container-one-content-para h1 {
   font-size: 1.25rem;
   font-weight: 500;
   margin-bottom: 15px;
 }
 
-/* Paragraph text styling */
 .sports-program-container-one-content-para p {
   font-weight: 300;
   font-size: 1rem;
@@ -116,7 +98,7 @@ section.visible {
   padding-right: 20px;
 }
 
-/* Media Queries for mobile responsiveness */
+/* Media Queries for responsiveness */
 @media (max-width: 768px) {
   .sports-program-container-one-content {
     flex-direction: column;
@@ -153,46 +135,4 @@ section.visible {
   .sports-program-container-one-content-para p {
     font-size: 0.9rem;
   }
-}
-
-
-/* /////////////////// */
-
-.sports-program-container-two{
-  width: 90%;
-}
-
-
-.sports-program-container-two-content{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.sports-program-container-two-content-para{
-  width: 50%;
-}
-
-
-.sports-program-container-two-content-image{
-  width: 50%;
-}
-
-.sports-program-container-two-content-image img{
-  width: 90%;
-}
-
-
-.sports-program-container-two-content-para ul{
-  list-style-type: disc;
-  padding-left: 20px;
-}
-
-.sports-program-container-two-content-para li{
-  font-family: "Poppins", system-ui;
-  font-weight: 300;
-  font-size: 14px;
-  color: rgb(100, 100, 100);
-  margin-bottom: 10px;
 }

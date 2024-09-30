@@ -5,26 +5,6 @@ import SportsOurOfferings from './Our Offerings - Sports Academy Image.png';
 
 const SportsAcademy = () => {
 
-  useEffect(() => {
-    const sections = document.querySelectorAll("section");
-
-    const options = {
-      threshold: 0.5,
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-        }
-      });
-    }, options);
-
-    sections.forEach(section => {
-      observer.observe(section);
-    });
-  }, []);
-
   return (
     <div className='container'>
       <section className='one'>
@@ -44,7 +24,7 @@ const SportsAcademy = () => {
         </div>
       </section>
 
-
+      {/* Uncomment and modify section two when needed */}
       {/* <section className='two'>
         <div className="sports-program-container-two">
           <div className="sports-program-container-two-content">
@@ -59,14 +39,13 @@ const SportsAcademy = () => {
                   and abilies.</li>
                 <li><b>Community Engagement:</b> We foster a sense of community through our recreational activites,
                   promoting a healthier lifestyle for everyone involved.</li>
-                <li><b>Grassroots Focus</b> We are commied to strengthening the foundaon of sports educaon at
-                  the grassroots level, nurturing future talents</li>
-                <li><b>Exposure to Compeve Matches</b> We make sure every student gets an opportunity to
-                  experience match-like situaons and play several compeve matches to gain confidence and
+                <li><b>Grassroots Focus:</b> We are committed to strengthening the foundation of sports education at
+                  the grassroots level, nurturing future talents.</li>
+                <li><b>Exposure to Competitive Matches:</b> We make sure every student gets an opportunity to
+                  experience match-like situations and play several competitive matches to gain confidence and
                   ability to perform under pressure.</li>
               </ul>
             </div>
-
             <div className="sports-program-container-two-content-image">
               <img src={SportsOurOfferings} alt="" />
             </div>
