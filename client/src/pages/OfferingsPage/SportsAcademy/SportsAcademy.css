@@ -1,4 +1,3 @@
-
 /* Global styles */
 * {
   margin: 0;
@@ -15,6 +14,26 @@ html, body {
 .sportsAcademy-main-container {
   height: 100vh;
   overflow-y: auto;
+}
+
+/* Top title section styles */
+.sports-top-title {
+  text-align: center;
+  padding: 80px 20px 40px;
+  background-color: #007bff;
+  color: white;
+}
+
+.sports-top-title-main {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.sports-top-title-subtitle {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-top: 10px;
+  color: #f0f0f0;
 }
 
 /* Section layout and animations */
@@ -107,6 +126,18 @@ html, body {
     padding-top: 210px; 
   }
 
+  .sports-top-title {
+    padding: 60px 20px 30px;
+  }
+
+  .sports-top-title-main {
+    font-size: 2rem;
+  }
+
+  .sports-top-title-subtitle {
+    font-size: 1rem;
+  }
+
   .sports-program-container-one h2 {
     font-size: 1.8rem; 
   }
@@ -137,4 +168,4 @@ html, body {
   .sports-program-container-one-content-para p {
     font-size: 0.95rem; 
   }
-} 
+}
