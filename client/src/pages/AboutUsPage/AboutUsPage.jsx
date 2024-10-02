@@ -116,7 +116,7 @@ const AboutUsPage = () => {
                 <img src={FounderImage} alt="Founder Raahil Dhruva" />
               </div>
               <div className="ceo-message-content">
-                <h3>OUR FOUNDER</h3>
+                <h1>OUR FOUNDER</h1>
                 <p>
                   Raahil Dhruva, born in Mumbai, was an active child right from a young age. Playing at inter-school, inter-district, and inter-state competitions, Raahil was a champion across multiple sports like tennis, football, running, swimming, and more. Since moving to the UK at age 10, Raahil continued pursuing his passion for tennis and, with the help of excellent school programs, was able to thrive and better his game. To continue playing at a professional level, Raahil trained at the Sutton Tennis Academy to help achieve his goal of representing India at world tournaments.
                 </p>
@@ -126,8 +126,17 @@ const AboutUsPage = () => {
                 <p>
                   Raahil has always believed in a good balance between education and an active lifestyle, and he is working to instill this value in all the schools he collaborates with. MQ was started with his vision to make every student an active participant in their day, in society, and throughout their lives.
                 </p>
-                <h2>Raahil Dhruva</h2>
-                <h3>Director | Marcos Quay</h3>
+
+                <div className="founder-regards">
+                  <div className="founder-regards-col1">
+                    <img src={FounderImage} alt="" />
+                  </div>
+                  <div className="founder-regards-col2">
+                    <h2>Raahil Dhruva</h2>
+                    <h3>Director | Marcos Quay</h3>
+                  </div>
+                </div>
+
               </div>
             </div>
             <Footer />

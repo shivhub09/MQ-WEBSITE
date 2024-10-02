@@ -123,6 +123,11 @@
   cursor: pointer;
 }
 
+.text-row-2 a {
+  text-decoration: none;
+  color: white;
+}
+
 .aboutUs-list {
   width: 75%;
   margin-bottom: 30px;
@@ -254,12 +259,12 @@
   padding-left: 20px;
 }
 
-.ceo-message-content h3 {
-  font-size: 18px;
+.ceo-message-content h1 {
   font-family: "Poppins", system-ui;
-  font-weight: 600;
+  font-size: 45px;
   color: #0c55a5;
-  margin-bottom: 10px;
+  font-weight: 700;
+  margin: 0;
 }
 
 .ceo-message-content p {
@@ -270,6 +275,16 @@
   color: #1c1c1c;
   line-height: 1.6;
   margin-bottom: 15px;
+}
+
+.founder-regards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.founder-regards-col1 {
+  display: none;
 }
 
 .ceo-message-content h2 {
@@ -292,21 +307,20 @@
   .aboutUs-image {
     margin-top: 75px;
     height: auto;
-    width: 100%; 
+    width: 100%;
     min-height: 300px;
     background-size: cover;
     background-position: center;
   }
 
   .aboutUs-image img {
-    width: 100%; 
-    height: auto; 
-    object-fit: cover; 
+    width: 100%;
+    height: auto;
+    object-fit: cover;
   }
   .about-us-main-container {
-    height: auto; 
+    height: auto;
     align-items: start;
-
   }
 
   .about-us-main-container section {
@@ -326,6 +340,8 @@
   .text-overlay {
     padding: 10px 15px;
     font-size: 20px;
+    background-color: white;
+
   }
 
   .aboutUs-container-title {
@@ -370,8 +386,8 @@
     margin: 0;
   }
 
-  .vision-container{
-    margin-bottom: 50px;
+  .vision-container {
+    margin-bottom: 1cqb;
   }
 
   .vision-container img,
@@ -384,9 +400,17 @@
     width: 70%;
   }
 
-  .vision-container h2,
+  .vision-container,
   .mission-container h2 {
     font-size: 30px;
+  }
+
+  .ceo-message-content h1 {
+    font-family: "Poppins", system-ui;
+    font-size: 30px;
+    color: #0c55a5;
+    font-weight: 700;
+    margin: 0;
   }
 
   .vision-container-content,
@@ -403,10 +427,24 @@
   .ceo-image {
     width: 90%;
     padding-right: 0;
+    display: none;
   }
 
   .ceo-message-content {
     width: 100%;
     padding-left: 0;
+  }
+
+  .founder-regards-col1 {
+    display: block;
+    width: 20%;
+    margin-right: 10px;
+    border-radius: 200px;
+  }
+
+  .founder-regards-col1 img {
+    width: 100%;
+    border-radius: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
   }
 }
