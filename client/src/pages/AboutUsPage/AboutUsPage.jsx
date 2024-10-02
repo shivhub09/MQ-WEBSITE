@@ -92,16 +92,14 @@ const AboutUsPage = () => {
               <div className="vision-container-content">
                 <h2>Vision</h2>
                 <p>Creating a robust culture of Health & Fitness in school through structured sports and physical education.</p>
-                <a href="">Get in Touch </a>
+                <a href="">Get in Touch &gt;</a>
               </div>
             </div>
             <div className="mission-container">
-
-
               <div className="mission-container-content">
                 <h2>Mission</h2>
                 <p>To align and include all our stakeholders towards the common mission – Fit School.</p>
-                <a href="">Get in Touch </a>
+                <a href="">Get in Touch &gt;</a>
               </div>
               <img src={MissionImage} alt="" />
             </div>
@@ -121,7 +119,7 @@ const AboutUsPage = () => {
                   Raahil Dhruva, born in Mumbai, was an active child right from a young age. Playing at inter-school, inter-district, and inter-state competitions, Raahil was a champion across multiple sports like tennis, football, running, swimming, and more. Since moving to the UK at age 10, Raahil continued pursuing his passion for tennis and, with the help of excellent school programs, was able to thrive and better his game. To continue playing at a professional level, Raahil trained at the Sutton Tennis Academy to help achieve his goal of representing India at world tournaments.
                 </p>
                 <p>
-                  After multiple victories, Raahil wanted the same kind of opportunities available to more students in India. He went on to study BSc. Entrepreneurship with a minor in Corporate Communications and Finance, at Queens University – Charlotte, North Carolina, on a tennis scholarship, where he represented his university in tournaments across the USA, achieving a ranking of 12 in doubles in the NCAA tournaments.
+                  After multiple victories, Raahil wanted the same kind of opportunities available to more students in India. He went on to study BSc. Entrepreneurship with a minor in Corporate Communications and Finance, at Queens University - Charlotte, North Carolina, on a tennis scholarship, where he represented his university in tournaments across the USA, achieving a ranking of 12 in doubles in the NCAA tournaments.
                 </p>
                 <p>
                   Raahil has always believed in a good balance between education and an active lifestyle, and he is working to instill this value in all the schools he collaborates with. MQ was started with his vision to make every student an active participant in their day, in society, and throughout their lives.
