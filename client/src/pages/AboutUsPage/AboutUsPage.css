@@ -40,6 +40,7 @@
   color: #0c55a5;
   font-weight: 700;
   text-align: center;
+  background-color: white;
 }
 
 /* content */
@@ -49,7 +50,6 @@
   font-size: 50px;
   color: #0c55a5;
   font-weight: 700;
-  margin-top: 20px;
   text-align: center;
 }
 
@@ -164,14 +164,13 @@
   align-items: center;
   justify-content: space-evenly;
   width: 85%;
-  height: 100vh;
+  height: auto;
 }
 
 .vision-container,
 .mission-container {
   display: flex;
   width: 100%;
-  height: 30%;
   align-items: center;
   justify-content: space-evenly;
 }
@@ -292,20 +291,22 @@
 @media (max-width: 768px) {
   .aboutUs-image {
     margin-top: 75px;
-    height: auto; /* Let the height adjust to the content */
-    width: 100%; /* Ensure the image takes full width */
-    min-height: 300px; /* Ensure there's enough height to show the image */
+    height: auto;
+    width: 100%; 
+    min-height: 300px;
     background-size: cover;
     background-position: center;
   }
 
   .aboutUs-image img {
-    width: 100%; /* Ensure the image fits the container width */
-    height: auto; /* Let the height adjust naturally */
-    object-fit: cover; /* Ensure the image scales correctly */
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
   }
   .about-us-main-container {
-    height: auto; /* Let height be determined by content */
+    height: auto; 
+    align-items: start;
+
   }
 
   .about-us-main-container section {
@@ -329,6 +330,8 @@
 
   .aboutUs-container-title {
     font-size: 30px;
+    margin-top: 0px;
+    margin-bottom: 20px;
   }
 
   .aboutUs-note {
@@ -355,7 +358,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
   }
 
   .mission-container,
@@ -365,12 +368,20 @@
     align-items: center;
     justify-content: space-around;
     margin: 0;
-    margin-bottom: 15px; /* Adjust this value to reduce space */
+  }
+
+  .vision-container{
+    margin-bottom: 50px;
   }
 
   .vision-container img,
   .mission-container img {
     width: 50%;
+  }
+
+  .mission-container img {
+    margin-top: 10px;
+    width: 70%;
   }
 
   .vision-container h2,
