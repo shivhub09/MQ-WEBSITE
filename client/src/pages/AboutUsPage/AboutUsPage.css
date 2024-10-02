@@ -1,21 +1,14 @@
 .container {
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
+
   height: 100vh;
-  scrollbar-width: none; /* For Firefox */
-  -ms-overflow-style: none; /* For Internet Explorer and Edge */
 }
 
-.container::-webkit-scrollbar {
-  display: none; /* For Chrome, Safari, and Opera */
-}
 
 section {
   height: 100vh;
   display: flex;
   /* align-items: center; */
   /* justify-content: center; */
-  scroll-snap-align: start;
 }
 
 .aboutUs-image {
