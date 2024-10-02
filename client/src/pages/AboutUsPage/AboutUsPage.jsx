@@ -27,7 +27,7 @@ const AboutUsPage = () => {
   }, []);
   return (
     <>
-      <div className="container">
+      <div className="about-us-main-container">
         <section className='one'>
           <div className="aboutUs-image">
             <div className="text-overlay">
