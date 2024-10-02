@@ -1,15 +1,37 @@
-h1{
+h1 {
     font-family: "Poppins", system-ui;
     font-size: 22px;
     color: #d92027;
     font-weight: 500;
 }
 
-h2{
+h2 {
     font-family: "Poppins", system-ui;
     font-size: 70px;
     color: #0c55a5;
     font-weight: 700;
     margin-bottom: 30px;
     text-align: start;
+}
+
+.ourJourneyCard {
+    height: auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 18px; /* Reduce font size for h1 */
+    }
+
+    h2 {
+        font-size: 36px; /* Reduce font size for h2 */
+        margin-bottom: 20px; /* Adjust margin for h2 */
+        text-align: center; /* Center h2 text on smaller screens */
+    }
+
+    .ourJourneyCard {
+        padding: 15px; /* Add padding for .ourJourneyCard */
+        margin: 10px; /* Add margin for spacing */
+    }
 }

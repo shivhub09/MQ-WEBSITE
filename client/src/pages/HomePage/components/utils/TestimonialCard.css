@@ -1,5 +1,5 @@
 .testimonialCard-container {
-    max-width: 1100px; /* Increased from 900px to 1000px */
+    max-width: 1100px;
     margin: 0 auto;
     padding: 20px;
     background-color: #ffffff;
@@ -7,6 +7,8 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     position: relative;
+    min-height: 300px; /* Ensure a minimum height */
+    height: auto; /* Let height adjust automatically based on content */
 }
 
 .testimonialCard-content {
@@ -41,4 +43,32 @@
     font-family: "Poppins", sans-serif;
     font-size: 1rem;
     color: #0c55a5;
+}
+
+/* Responsive Styles for Mobile */
+@media (max-width: 768px) {
+    .testimonialCard-container {
+        width: 95%; /* Ensure the card takes 95% of screen width */
+        padding: 10px; /* Adjust padding for smaller screens */
+        min-height: auto; /* Let the height adjust automatically for small content */
+        height: auto; /* No fixed height */
+    }
+
+    .testimonialCard-content {
+        font-size: 0.85rem; /* Reduce font size for smaller screens */
+        padding: 0 10px;
+    }
+
+    .testimonialCard-content:before {
+        font-size: 30px; /* Reduce size of the quotation mark */
+        left: -15px;
+    }
+
+    .testimonialCard-name {
+        font-size: 0.9rem; /* Reduce name font size */
+    }
+
+    .testimonialCard-position {
+        font-size: 0.8rem; /* Reduce position font size */
+    }
 }

@@ -1,11 +1,16 @@
-.fifth {
+.testimonial-main-container{
+    height: 100vh;
+}
+
+.testimonial-main-container section {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center items horizontally */
-    justify-content: center; /* Center items vertically */
+    align-items: center;
+    justify-content: center;
     height: 100vh; /* Ensure the container takes the full viewport height */
 }
 
+/* Testimonials Section */
 .testimonal {
     height: 90vh;
     width: 100%;
@@ -23,6 +28,7 @@
     width: 100%;
 }
 
+/* Testimonial Title */
 .testimonal-container-title {
     font-family: "Poppins", sans-serif;
     font-size: 50px;
@@ -32,6 +38,7 @@
     margin-bottom: 20px; /* Added margin for spacing */
 }
 
+/* Testimonial Content */
 .testimonal-container-content {
     width: 80%;
     margin: 0 auto;
@@ -42,7 +49,8 @@
     padding: 0 10px;
 }
 
-.slick-prev, .slick-next {
+.slick-prev,
+.slick-next {
     color: #0c55a5;
 }
 
@@ -50,6 +58,7 @@
     color: #0c55a5;
 }
 
+/* Testimonial Card Content */
 .testimonal-card-content {
     font-family: "Poppins", sans-serif;
     font-size: 1.2rem;
@@ -70,6 +79,7 @@
     left: -40px;
 }
 
+/* Testimonial Card Author */
 .testimonal-card-author {
     font-family: "Poppins", sans-serif;
     font-size: 1.1rem;
@@ -78,8 +88,70 @@
     margin-top: 20px;
 }
 
+/* Testimonial Card Position */
 .testimonal-card-position {
     font-family: "Poppins", sans-serif;
     font-size: 1rem;
     color: #0c55a5;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .testimonial-main-container{
+        height: 50%;
+    }
+    
+    .testimonial-main-container section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto; /* Ensure the container takes the full viewport height */
+    }
+    
+    /* Testimonials Section */
+    .testimonal {
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        background: linear-gradient(to bottom, #ffffff, #e3ecf6);
+        text-align: center; /* Center text inside the testimonial section */
+    }
+
+    .testimonal-container-title {
+        font-size: 36px; /* Reduce title font size */
+        margin-bottom: 15px; /* Adjust margin */
+    }
+
+    .testimonal-container-content {
+        width: 90%; /* Increase width to fit smaller screens */
+        padding: 0 10px; /* Add padding */
+    }
+
+    .testimonal-card-content {
+        font-size: 1rem; /* Reduce font size */
+        padding: 0 10px; /* Add padding */
+        height: 50vh; /* Make the card height around 50% of mobile height */
+        overflow: hidden; /* Ensure the content fits within the card */
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Vertically center content */
+    }
+
+    .testimonal-card-content:before {
+        font-size: 40px; /* Reduce size of quote */
+        left: -20px; /* Adjust position */
+    }
+
+    .testimonal-card-author {
+        font-size: 1rem; /* Reduce author font size */
+    }
+
+    .testimonal-card-position {
+        font-size: 0.9rem; /* Reduce position font size */
+    }
 }

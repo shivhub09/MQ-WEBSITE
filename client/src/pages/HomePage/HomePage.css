@@ -1,36 +1,31 @@
-*{
+* {
   margin: 0;
   padding: 0;
-  box-sizing:border-box ;
+  box-sizing: border-box;
 }
 
-
-
-.home-page-container {
-
-  height: 100vh;
+.home-page-main-container {
 }
 
-
-.home-page-container section{
-  height: 100vh;
+/* Home Page Main Container */
+.home-page-main-container section {
   display: flex;
+  flex-direction: column; /* Stack content vertically */
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh; /* Ensure section takes full height if needed */
 }
 
-/* /////////////////////////////////////////////////// */
-
+/* Home Page Image */
 .homePage-container img {
-  width: 100%;  
-  height: 100%; 
-  object-fit: cover; 
-  display: block; 
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
-
-/* /////////////////////////////////////////////////// */
-
+/* What We Do Container */
 .what-we-do-container {
   height: 100vh;
   width: 100%;
@@ -144,77 +139,8 @@
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .what-we-do-container-content-box {
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-  }
-
-  .what-we-do-container-content {
-    width: 100%;
-    padding-right: 0;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-
-  .what-we-do-container-content p {
-    margin-bottom: 15px;
-    font-size: 14px;
-  }
-
-  .what-we-do-container-images {
-    width: 100%;
-    flex-direction: row;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-
-  .what-we-do-container-images img {
-    width: 30%; 
-    height: auto; 
-    margin: 0 10px;
-  }
-
-  .getInTouchBtn {
-    font-size: 12px;
-    padding: 8px 20px;
-  }
-
-  .what-we-do-container-title {
-    font-size: 36px;
-  }
-}
-
-@media (max-width: 480px) {
-  .what-we-do-container-title {
-    font-size: 30px;
-  }
-
-  .what-we-do-container-content p {
-    font-size: 13px;
-  }
-
-  .getInTouchBtn {
-    font-size: 11px;
-    padding: 6px 18px;
-  }
-
-  .what-we-do-container-images img {
-    width: 28%; 
-  }
-}
-
-
-
-/* /////////////////////////////////////////////////// */
-
-.three{
-  height: 100vh;
-}
-
-.ourOfferings{
+/* Our Offerings */
+.ourOfferings {
   height: 100vh;
   width: 100%;
   display: flex;
@@ -225,7 +151,7 @@
   background-color: #f7f9fc;
 }
 
-.ourOfferings-container-title{
+.ourOfferings-container-title {
   font-family: "Poppins", system-ui;
   font-size: 50px;
   color: #0c55a5;
@@ -234,20 +160,17 @@
   text-align: center;
 }
 
-
-.ourOfferings-card-container{
+.ourOfferings-card-container {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   width: 100%;
   height: 100%;
-
 }
 
-/* /////////////////////////////////////////////////// */
-
-.ourJourney{
+/* Our Journey */
+.ourJourney {
   height: 100vh;
   width: 100%;
   display: flex;
@@ -258,7 +181,7 @@
   background-color: #f7f9fc;
 }
 
-.ourJourney-container-title{
+.ourJourney-container-title {
   font-family: "Poppins", system-ui;
   font-size: 50px;
   color: #0c55a5;
@@ -268,8 +191,7 @@
   text-align: center;
 }
 
-
-.ourJourney-container-content{
+.ourJourney-container-content {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -277,10 +199,8 @@
   width: 100%;
 }
 
-/* /////////////////////////////////////////////////// */
-
-
-.testimonal{
+/* Testimonials */
+.testimonal {
   height: 100vh;
   width: 100%;
   display: flex;
@@ -291,7 +211,7 @@
   background-color: #f7f9fc;
 }
 
-.testimonal-container-title{
+.testimonal-container-title {
   font-family: "Poppins", system-ui;
   font-size: 50px;
   color: #0c55a5;
@@ -301,32 +221,86 @@
   text-align: center;
 }
 
-
-/* Responsive Styles for Our Offerings */
+/* Responsive Styles */
 @media (max-width: 768px) {
-  .ourOfferings-card-container {
-    flex-direction: column; 
-    align-items: center;
-    justify-content: center;
+  .home-page-main-container {
+
+    padding-top: 50px;
+    height: auto; /* Let height be determined by content */
+  }
+
+  .home-page-main-container section {
+    height: auto;
+    min-height: auto;
+  }
+
+
+  .what-we-do-container {
+    height: auto; /* Adjust height for smaller screens */
+    padding: 20px; /* Add padding */
+  }
+
+  .ourJourney{
     height: auto;
   }
 
-  .ourOfferings-card-container > * {
-    margin-bottom: 20px;
-    width: 90%; 
+  .what-we-do-container-title {
+    font-size: 36px; /* Reduce title font size */
+    margin-bottom: 20px; /* Adjust margin */
   }
+
+  .what-we-do-container-content-box {
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center align items */
+    height: auto; /* Allow height to adjust */
+  }
+
+  .what-we-do-container-content {
+    width: 100%; /* Full width on smaller screens */
+    height: auto; /* Allow height to adjust */
+    padding-right: 0; /* Remove right padding */
+    text-align: center; /* Center align text */
+  }
+
+  .what-we-do-container-content p {
+    margin-bottom: 15px; /* Adjust bottom margin */
+    font-size: 14px; /* Reduce font size */
+  }
+
+  .what-we-do-container-images {
+    width: 100%; /* Full width */
+    
+    flex-direction: row; /* Stack images vertically */
+    align-items: center; /* Center align images */
+  }
+
+  .what-we-do-container-images img {
+    width: 30%; /* Adjust image width */
+    height: 100%; /* Maintain aspect ratio */
+    margin: 10px 0; /* Add vertical spacing between images */
+  }
+
+  .getInTouchBtn {
+    font-size: 12px; /* Adjust button font size */
+    padding: 8px 20px; /* Adjust padding */
+  }
+
+  .ourOfferings-container-title,
+  .ourJourney-container-title,
+  .testimonal-container-title {
+    font-size: 36px; /* Reduce title font size */
+  }
+
+  .ourOfferings-card-container,
+  .ourJourney-container-content {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+  }
+
+  .ourOfferings-card-container {
+    padding: 20px; /* Add padding */
+    width: 100%; /* Full width */
+  }
+
+
 }
-
-
-@media (max-width: 768px) {
-  .testimonal-container-content {
-    flex-direction: column; 
-    align-items: center;
-  }
-
-  .testimonal-container-content > * {
-    margin-bottom: 20px;
-    width: 90%; 
-  }
-}
-

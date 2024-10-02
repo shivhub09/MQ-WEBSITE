@@ -18,7 +18,7 @@ const TestimonialCarousel = () => {
   };
 
   return (
-    <>
+    <div className='testimonial-main-container'>
       <section className="fifth">
         <div className="testimonal">
           <h1 className="testimonal-container-title">Testimonial</h1>
@@ -56,7 +56,7 @@ const TestimonialCarousel = () => {
           <Footer></Footer>
         </div>
       </section>
-    </>
+    </div>
 
   );
 }
