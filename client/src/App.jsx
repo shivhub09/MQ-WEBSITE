@@ -16,7 +16,7 @@ import BrandSponsorship from './pages/OfferingsPage/BrandSponsorship/BrandSponso
 function App() {
   return (
     <Router>
-      <Navbar />  {/* Move Navbar inside the Router */}
+      <Navbar /> 
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/home" element={<HomePage />} />

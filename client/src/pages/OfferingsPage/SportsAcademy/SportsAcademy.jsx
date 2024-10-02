@@ -6,10 +6,11 @@ const SportsAcademy = () => {
 
   return (
     <div className='sportsAcademy-main-container'>
+
       <section className='one'>
         <div className="sports-program-container-one">
           <h2>Marcos Quay Sports Academy (Elite Sports Program)</h2>
-          <h1>Accessible and Fun Sports Training</h1>
+          {/* <h1>Accessible and Fun Sports Training</h1> */}
           <div className="sports-program-container-one-content">
             <div className="sports-program-container-one-image">
               <img src={SportsComplexImage} alt="Sports Complex" />

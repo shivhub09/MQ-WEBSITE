@@ -6,21 +6,31 @@
   font-family: "Poppins", system-ui, sans-serif;
 }
 
-html, body {
-  scroll-behavior: smooth; /* Smooth scrolling */
+html,
+body {
   overflow-x: hidden;
 }
 
+/*
 .sportsAcademy-main-container {
-  height: 100vh;
+  min-height: 100vh;
   overflow-y: auto;
+}
+*/
+.sportsAcademy-main-container section {
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0; /* Add padding for spacing */
+  width: 100%;
+  min-height: 100vh; /* Ensure section takes full height if needed */
 }
 
 /* Top title section styles */
 .sports-top-title {
   text-align: center;
-  padding: 80px 20px 40px;
-  background-color: #007bff;
+  padding: 100px 20px 40px; /* Adjusted top padding to ensure visibility */
   color: white;
 }
 
@@ -75,7 +85,7 @@ html, body {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-} 
+}
 
 .sports-program-container-one-image {
   width: 45%;
@@ -117,29 +127,25 @@ html, body {
 }
 
 @media (max-width: 768px) {
-  .sportsAcademy-main-container {
-    height: auto; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-top: 210px; 
+  /* Remove forced height on smaller screens */
+
+
+  .sportsAcademy-main-container  {
+    height: auto; /* Let height be determined by content */
   }
 
-  .sports-top-title {
-    padding: 60px 20px 30px;
+
+  .sportsAcademy-main-container section {
+    height: auto;
+    /* padding: 20px 0; */
+    min-height: auto;
   }
 
-  .sports-top-title-main {
-    font-size: 2rem;
-  }
-
-  .sports-top-title-subtitle {
-    font-size: 1rem;
-  }
 
   .sports-program-container-one h2 {
-    font-size: 1.8rem; 
+    margin-top: 25px;
+    font-size: 1.8rem;
+    padding: none;
   }
 
   .sports-program-container-one h1 {
@@ -154,18 +160,18 @@ html, body {
 
   .sports-program-container-one-image {
     margin-top: 0;
-    width: 80%; 
-    margin-bottom: 20px; 
+    width: 80%;
+    margin-bottom: 20px;
   }
 
   .sports-program-container-one-content-para {
     width: 90%;
-    text-align: left; 
-    padding-right: 0; 
-    font-size: 1rem; 
+    text-align: left;
+    padding-right: 0;
+    font-size: 1rem;
   }
 
   .sports-program-container-one-content-para p {
-    font-size: 0.95rem; 
+    font-size: 0.95rem;
   }
 }
