@@ -1,24 +1,26 @@
+/* Base styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.container {
-  height: 100vh;
+.brandSponsorship-main-container {
   scrollbar-width: none;
 }
 
-.container::-webkit-scrollbar {
+.brandSponsorship-main-container::-webkit-scrollbar {
   display: none;
 }
 
-section {
-  height: 100vh;
+.brandSponsorship-main-container section {
   display: flex;
+  flex-direction: column; /* Stack content vertically */
   align-items: center;
   justify-content: center;
-  /* padding: 40px 20px; */
+  padding: 40px 0; /* Add padding for spacing */
+  width: 100%;
+  min-height: 100vh; /* Ensure section takes full height if needed */
 }
 
 .brandSponsorship-container-one {
@@ -47,7 +49,7 @@ section {
 }
 
 .brandSponsorship-container-two-content-image img {
-  width: 100%; /* Increase image size */
+  width: 100%; 
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -63,7 +65,43 @@ section {
   text-align: justify;
 }
 
+.brandSponsorship--brands-container-two-content-image img {
+  width: 100%;
+}
 
-.brandSponsorship--brands-container-two-content-image img{
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .brandSponsorship-main-container {
+    height: auto; /* Let height be determined by content */
+  }
+
+  .brandSponsorship-container-one h1 {
+    margin-top: 50px;
+    font-size: 1.5rem;
+  }
+
+  .brandSponsorship-main-container section {
+    height: auto;
+    /* padding: 20px 0; */
+    min-height: auto;
+  }
+
+  .brandSponsorship-container-two-content {
+    flex-direction: column;
+    /* align-items: center; */
     width: 100%;
+    margin-top: 0;
+    margin-bottom: 30px; 
+  }
+
+  .brandSponsorship-container-two-content-para {
+    width: 90%;
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  .brandSponsorship-container-two-content-image {
+    width: 50%;
+    margin-bottom: 20px;
+  }
 }

@@ -1,3 +1,4 @@
+
 /* Global styles */
 * {
   margin: 0;
@@ -11,24 +12,22 @@ html, body {
   overflow-x: hidden;
 }
 
-.container {
+.sportsAcademy-main-container {
   height: 100vh;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 /* Section layout and animations */
-section {
-  height: 100vh;
+.sportsAcademy-main-container section {
+  min-height: 100vh; /* Ensure content determines height */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #f8f8f8;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  transform: translateY(50px); /* Slide-in effect */
+  padding: 40px 0; /* Add padding for spacing */
 }
-
-
 
 /* Main container for sports program */
 .sports-program-container-one {
@@ -98,41 +97,44 @@ section {
   padding-right: 20px;
 }
 
-/* Media Queries for responsiveness */
 @media (max-width: 768px) {
+  .sportsAcademy-main-container {
+    height: auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 210px; 
+  }
+
+  .sports-program-container-one h2 {
+    font-size: 1.8rem; 
+  }
+
+  .sports-program-container-one h1 {
+    font-size: 1.3rem;
+  }
+
   .sports-program-container-one-content {
     flex-direction: column;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
   }
 
-  .sports-program-container-one-image,
+  .sports-program-container-one-image {
+    margin-top: 0;
+    width: 80%; 
+    margin-bottom: 20px; 
+  }
+
   .sports-program-container-one-content-para {
-    width: 100%;
-  }
-
-  .sports-program-container-one h2 {
-    font-size: 2rem;
-  }
-
-  .sports-program-container-one h1 {
-    font-size: 2rem;
+    width: 90%;
+    text-align: left; 
+    padding-right: 0; 
+    font-size: 1rem; 
   }
 
   .sports-program-container-one-content-para p {
-    padding-right: 0;
+    font-size: 0.95rem; 
   }
-}
-
-@media (max-width: 480px) {
-  .sports-program-container-one h2 {
-    font-size: 1.8rem;
-  }
-
-  .sports-program-container-one h1 {
-    font-size: 1.6rem;
-  }
-
-  .sports-program-container-one-content-para p {
-    font-size: 0.9rem;
-  }
-}
+} 

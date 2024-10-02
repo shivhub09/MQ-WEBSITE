@@ -1,12 +1,11 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './SportsAcademy.css';
 import SportsComplexImage from './Website Our Offerings - MQ Sports Academy.png';
-import SportsOurOfferings from './Our Offerings - Sports Academy Image.png';
 
 const SportsAcademy = () => {
 
   return (
-    <div className='container'>
+    <div className='sportsAcademy-main-container'>
       <section className='one'>
         <div className="sports-program-container-one">
           <h2>Marcos Quay Sports Academy (Elite Sports Program)</h2>
@@ -23,35 +22,6 @@ const SportsAcademy = () => {
           </div>
         </div>
       </section>
-
-      {/* Uncomment and modify section two when needed */}
-      {/* <section className='two'>
-        <div className="sports-program-container-two">
-          <div className="sports-program-container-two-content">
-            <div className="sports-program-container-two-content-para">
-              <h1>Why Choose Us?</h1>
-              <ul>
-                <li><b>Certified Coaches </b>Our team comprises experienced and certified coaches dedicated to
-                  providing the best training</li>
-                <li><b>Latest Equipment:</b> We use the latest sports equipment to ensure effective and enjoyable
-                  training sessions</li>
-                <li><b>Inclusive Programs:</b> Our activties and events are designed to be inclusive, catering to all ages
-                  and abilies.</li>
-                <li><b>Community Engagement:</b> We foster a sense of community through our recreational activites,
-                  promoting a healthier lifestyle for everyone involved.</li>
-                <li><b>Grassroots Focus:</b> We are committed to strengthening the foundation of sports education at
-                  the grassroots level, nurturing future talents.</li>
-                <li><b>Exposure to Competitive Matches:</b> We make sure every student gets an opportunity to
-                  experience match-like situations and play several competitive matches to gain confidence and
-                  ability to perform under pressure.</li>
-              </ul>
-            </div>
-            <div className="sports-program-container-two-content-image">
-              <img src={SportsOurOfferings} alt="" />
-            </div>
-          </div>
-        </div>
-      </section> */}
     </div>
   );
 };

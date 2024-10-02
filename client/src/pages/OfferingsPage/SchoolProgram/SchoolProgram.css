@@ -4,82 +4,104 @@
   box-sizing: border-box;
 }
 
-
-
-.container {
-  height: 100vh;
-  scrollbar-width: none;
+.schoolProgram-main-container {
+  overflow: hidden; /* Hide overflowing content */
 }
 
-
-section {
-  height: 100vh;
+/* Section styles */
+.schoolProgram-main-container section {
+  height: 100vh; /* Default for larger screens */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 20px; /* Add padding for better spacing */
 }
 
+/* Mobile view adjustments */
+
+
+/* Foundations */
 .foundations {
   width: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
 }
 
+/* Titles */
 .schoolProgram-title {
   margin: 0;
 }
 
 .schoolProgram-title h2 {
   margin: 0;
+  font-size: 40px;
 }
 
 .schoolProgram-subtitle {
   margin: 0;
 }
 
+/* Container for each section */
 .schoolProgram-container-one {
   display: flex;
-  flex-direction: row;
+  flex-direction: column; /* Stack elements vertically */
   align-items: center;
-  justify-content: space-evenly;
-  margin: 20px 0px;
+  justify-content: center;
+  margin: 10px 0px;
 }
 
+/* Content */
 .container-one-content {
-  width: 60%;
+  width: 100%; /* Make content take full width */
+  max-width: 600px; /* Set a max-width for larger screens */
   font-family: "Poppins", system-ui;
   font-weight: 300;
   font-size: 16px;
   color: rgb(100, 100, 100);
   letter-spacing: 1px;
   text-align: justify;
+  padding: 10px; /* Add padding for better spacing */
 }
 
-.content-list-items li{
+/* List Items */
+.content-list-items {
+  padding-left: 20px; /* Add padding for list */
+}
+
+.content-list-items li {
   list-style-type: disc;
 }
+
+/* Images */
 .container-one-image {
-  width: 30%;
+  width: 100%; /* Set to full width for better responsiveness */
+  display: flex;
+  justify-content: center; /* Center images */
 }
 
 .container-one-image img {
-  width: 70%;
+  max-width: 90%; /* Responsive image */
+  height: auto; /* Maintain aspect ratio */
 }
 
-/* our process */
-
+/* Our Process */
 .ourProcess-container-one-image {
-  width: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Center image */
 }
 
 .ourProcess-container-one-image img {
-  width: 100%;
+  max-width: 100%; /* Responsive image */
+  height: auto; /* Maintain aspect ratio */
 }
 
 .ourProcess-container-one-content {
-  width: 40%;
+  width: 100%; /* Full width for better responsiveness */
+  max-width: 600px; /* Set a max-width for larger screens */
 }
 
 .ourProcess-container-one-content p {
@@ -89,31 +111,71 @@ section {
   color: rgb(100, 100, 100);
   letter-spacing: 1px;
   text-align: justify;
+  padding: 10px; /* Add padding for better spacing */
 }
 
+/* Choose Us */
 .chooseus-container-one-content {
-  width: 80%;
+  width: 100%;
+  max-width: 600px; /* Set a max-width for larger screens */
   font-family: "Poppins", system-ui;
   font-weight: 300;
   font-size: 16px;
   color: rgb(100, 100, 100);
   letter-spacing: 1px;
   text-align: justify;
+  padding: 10px; /* Add padding for better spacing */
 }
 
-.chooseus-container-one-content p{
-  font-family: "Poppins", system-ui;
-  font-weight: 300;
-  font-size: 16px;
-  color: rgb(100, 100, 100);
-  letter-spacing: 1px;
-  text-align: justify;
+/* Why Choose Us */
+.why-choose-us-container-one-image {
+  width: 100%; /* Full width for responsiveness */
 }
 
-.why-choose-us-container-one-image{
-  width: 50%;
+.why-choose-us-container-one-image img {
+  max-width: 100%; /* Responsive image */
+  height: auto; /* Maintain aspect ratio */
+}
 
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .schoolProgram-main-container {
+    height: auto;
+  }
+
+  .schoolProgram-main-container section {
+    height: auto; /* Allow sections to grow based on content */
+  }
+
+  /* Add margin to titles for mobile view */
+  .schoolProgram-title h2 {
+    margin-top: 60px; /* Adjust this value as needed */
+  }
+
+  .schoolProgram-title h2 {
+    margin-top: 100px; /* Increase margin to ensure visibility */
+  }
 }
-.why-choose-us-container-one-image img{
-  width: 90%;
-}
+
+
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .schoolProgram-container-one {
+    flex-direction: row; /* Change to row for wider screens */
+    justify-content: space-evenly;
+  }
+
+  .container-one-content {
+    width: 60%; /* Adjust width for larger screens */
+  }
+
+  .container-one-image {
+    width: 30%; /* Adjust width for larger screens */
+  }
+
+  .ourProcess-container-one-content {
+    width: 40%; /* Adjust width for larger screens */
+  }
+} 

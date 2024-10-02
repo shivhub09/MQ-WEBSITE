@@ -5,7 +5,7 @@ import ACE3 from './Our Offerings - ACE 3.png';
 
 const ACE = () => {
   return (
-    <div className="container">
+    <div className="ace-main-container">
       <section className='one'>
         <div className="ace-container-one">
           <h2>ACE: Activities for Continued Enrichment</h2>

@@ -5,27 +5,8 @@ import OurBrands from './Website Our Offerings.png';
 
 const BrandSponsorship = () => {
 
-  useEffect(() => {
-    const sections = document.querySelectorAll("section");
-
-    const options = {
-      threshold: 0.5, // Trigger when 50% of the section is visible
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-        }
-      });
-    }, options);
-
-    sections.forEach(section => {
-      observer.observe(section);
-    });
-  }, []);
   return (
-    <div className="container">
+    <div className="brandSponsorship-main-container">
       <section className="one">
         <div className="brandSponsorship-container-one">
           <h1>Branding and Sponsorship</h1>

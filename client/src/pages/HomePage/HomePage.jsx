@@ -37,7 +37,7 @@ const HomePage = () => {
     });
   }, []);
   return (
-    <div class="container">
+    <div class="home-page-container">
 
       <section class="one">
         <div className="homePage-container">
