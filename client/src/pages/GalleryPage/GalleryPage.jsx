@@ -1,12 +1,10 @@
-import React from 'react'
+import React from 'react';
 import './GalleryPage.css';
 import Footer from '../../utils/Footer/Footer';
 
-
 const GalleryPage = () => {
-
   return (
-    <div className="container1">
+    <div className="container-gallery">
       <div className="row">
         <h1>Gallery</h1>
         <p>Step into our Marcos Quay's gallery, a dynamic montage of athletic prowess, teamwork, and unforgettable moments captured on and off the field</p>
@@ -54,9 +52,9 @@ const GalleryPage = () => {
           <img src='./images/IMG_32.jpeg' alt='Image 1'></img>
         </div>
       </div>
-      <Footer></Footer>
+      <Footer />
     </div>
   );
 }
 
-export default GalleryPage
+export default GalleryPage;

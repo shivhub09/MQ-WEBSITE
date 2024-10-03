@@ -95,7 +95,7 @@ const ContactPage = () => {
 
       {/* Section 2: Contact Form (Reverted to original UI) */}
       <section className='form-section'>
-        <div className='form-container'>
+        <div className='contact-page-form-container'>
           <h1>Contact Us</h1>
           <p>We'd love to talk about how we can help you.</p>
           <div className="form-box">

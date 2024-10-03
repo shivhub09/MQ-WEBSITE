@@ -69,7 +69,7 @@ const CareerPage = () => {
 
       <section className='one'>
         <div className='first'>
-          <div className="form-container">
+          <div className="career-page-form-container">
             <h1 className="form-title">Join Our Growing Team</h1>
             {submitted ? (
               <div className="alert">

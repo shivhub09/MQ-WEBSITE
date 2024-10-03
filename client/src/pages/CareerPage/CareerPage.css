@@ -35,7 +35,7 @@ body {
   width: 70%;
 }
 
-.form-container {
+.career-page-form-container {
   width: 90%;
   margin: 60px auto;
   padding: 35px;
@@ -250,7 +250,7 @@ input[type="file"]::file-selector-button {
     min-height: auto;
   }
 
-  .form-container {
+  .career-page-form-container {
     width: 100%;
     padding: 20px;
     border-radius: 8px;

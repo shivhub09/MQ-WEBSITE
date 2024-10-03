@@ -1,102 +1,112 @@
-.row{
-    margin-top: 3%;
-    min-height: 30vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: center;
-    font-family: sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.row h1{
-    color: #0C55A5;
-    font-size: 60px;
-    font-family: "Poppins", system-ui;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
-    font-weight: 600;
-}
-.row p{
-    width:40%;
-    color: #4B5563;
-    text-align: center;
-    font-family: "Poppins", system-ui;
-    font-size: 16px;
 
+html,
+body {
+  height: 100%;
+  overflow: hidden; /* Prevent the global page scroll */
 }
+
+.container-gallery {
+  height: 100vh; /* Ensure the gallery container takes up the full viewport height */
+  overflow-y: auto; /* Enable scrolling specifically for the gallery container */
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  margin-top: 3%;
+  min-height: 30vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.row h1 {
+  color: #0c55a5;
+  font-size: 60px;
+  font-family: "Poppins", system-ui;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+  font-weight: 600;
+}
+
+.row p {
+  width: 40%;
+  color: #4b5563;
+  text-align: center;
+  font-family: "Poppins", system-ui;
+  font-size: 16px;
+}
+
+/* Adjusted for gallery scrolling */
 .gallery-main-container {
-    display: flex;
-    justify-content: space-between; /* Evenly space the columns */
-    align-items: stretch; /* Ensure containers are of equal height */
-    width: 100%; /* Full width */
-    flex-wrap: wrap;
-    padding: 40px 120px;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 40px 120px;
+}
+
 .gallery-child-container {
-    flex: 1 1 calc(25% - 10px); /* Each child container takes up equal space */
-    margin: 5px;
-    padding: 0;
-}
-
-.gallery-child-container:first-child {
-margin-left: 0; /* Remove margin on the first container */
-}
-
-.gallery-child-container:last-child {
-margin-right: 0; /* Remove margin on the last container */
+  flex: 1 1 calc(25% - 10px);
+  margin: 5px;
+  padding: 0;
 }
 
 .gallery-child-container img {
-    width: 100%;
-    transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out;
-    margin: 5px 0px;
+  width: 100%;
+  transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out;
+  margin: 5px 0px;
 }
 
 .gallery-child-container img:hover {
-    filter: brightness(0.8);
-    transform: scale(1.01);
+  filter: brightness(0.8);
+  transform: scale(1.01);
 }
 
 @media (max-width: 768px) {
-    .row{
-        margin-top: 0%;
-        width: 100%;    
-        display: flex;  
-        flex-direction: column;
-        align-items: center;
-        font-family: sans-serif;
-        padding-top: 66px;
-    }
+  .row {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+    padding-top: 66px;
+  }
+
+  .row h1 {
+    color: #0c55a5;
+    font-size: 30px;
+    font-family: "Poppins", system-ui;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+    font-weight: 600;
+    margin: 0 auto;
+  }
+
+  .row p {
+    width: 90%;
+    color: #4b5563;
+    text-align: center;
+    font-family: "Poppins", system-ui;
+    font-size: 16px;
     
-    .row h1{
-        color: #0C55A5;
-        font-size: 30px;
-        font-family: "Poppins", system-ui;
-        text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
-        font-weight: 600;
-        margin: 0 auto;
-        
-    }
-    .row p{
-        width:90%;
-        color: #4B5563;
-        text-align: center;
-        font-family: "Poppins", system-ui;
-        font-size: 16px;
-    
-    }
-    .gallery-main-container {
-        display: flex;
-        justify-content: space-between; /* Evenly space the columns */
-        align-items: stretch; /* Ensure containers are of equal height */
-        width: 100%; /* Full width */
-        margin-top: 0px;
-        padding: 40px 40px;
-      }
-    .gallery-child-container {
-        flex: 1 1 calc(50% - 10px); /* Each child container takes up equal space */
-        margin: 5px;
-        padding: 0;
-    }
-    
+  }
+
+  .gallery-main-container {
+    padding: 40px 40px;
+  }
+
+  .gallery-child-container {
+    flex: 1 1 calc(50% - 10px);
+    margin: 5px;
+    padding: 0;
+  }
 }
