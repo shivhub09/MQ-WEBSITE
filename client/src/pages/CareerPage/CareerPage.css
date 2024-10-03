@@ -229,22 +229,21 @@ input[type="file"]::file-selector-button {
   width: 100%;
 }
 @media (max-width: 768px) {
-  html, body {
+  html,
+  body {
     overflow-y: auto;
     height: auto;
   }
-  
+
   .career-page-main-container {
-    /* padding-top: 50px; */
     width: 100%;
     height: auto;
-    scroll-snap-type: none; /* Disable scroll snap for small screens */
+    scroll-snap-type: none;
   }
 
   .first {
     width: 90%;
   }
-  
 
   .career-page-main-container section {
     height: auto;
@@ -297,7 +296,7 @@ input[type="file"]::file-selector-button {
   .details {
     flex-direction: column;
     padding: 5px 0;
-    align-items:center; /* Align content to start for better readability */
+    align-items: center; /* Align content to start for better readability */
     width: 100%;
   }
 

@@ -1,10 +1,9 @@
-/* Remove scrollbar */
+/* Base styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 html,
 body {
   height: 100%;
@@ -24,12 +23,13 @@ body {
 }
 
 .brandSponsorship-main-container section {
-  scroll-snap-align: start;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  height: 100vh; /* Full height for each section */
-  width: 100vw; /* Full width for each section */
+  justify-content: center;
+  padding: 40px 0;
+  width: 100%;
+  min-height: 100vh;
 }
 
 .brandSponsorship-container-one {
@@ -86,21 +86,23 @@ body {
     height: auto;
   }
   .brandSponsorship-main-container {
-    height: auto; 
+    height: auto; /* Let height be determined by content */
   }
 
   .brandSponsorship-container-one h1 {
-    margin-top: 75px;
+    margin-top: 50px;
     font-size: 1.5rem;
   }
 
   .brandSponsorship-main-container section {
     height: auto;
+    /* padding: 20px 0; */
     min-height: auto;
   }
 
   .brandSponsorship-container-two-content {
     flex-direction: column;
+    /* align-items: center; */
     width: 100%;
     margin-top: 0;
     margin-bottom: 30px;
