@@ -1,25 +1,37 @@
+/* Remove scrollbar */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+html,
+body {
+  height: 100%;
+  overflow: hidden; /* Disable scrollbar on the body */
+}
+
 .schoolProgram-main-container {
-  overflow: hidden; /* Hide overflowing content */
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+  overflow-y: scroll;
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For IE and Edge */
+}
+
+.schoolProgram-main-container::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
 }
 
 /* Section styles */
 .schoolProgram-main-container section {
-  height: 100vh; /* Default for larger screens */
+  scroll-snap-align: start;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  padding: 20px; /* Add padding for better spacing */
+  align-items: center;
+  height: 100vh; /* Full height for each section */
+  width: 100vw; /* Full width for each section */
 }
-
-/* Mobile view adjustments */
-
 
 /* Foundations */
 .foundations {
@@ -137,31 +149,37 @@
   height: auto; /* Maintain aspect ratio */
 }
 
-
 /* Responsive Design */
 @media (max-width: 768px) {
+  html,
+  body {
+    overflow-y: auto; /* Allow vertical scrolling */
+    height: auto;
+  }
   .schoolProgram-main-container {
     height: auto;
   }
 
   .schoolProgram-main-container section {
-    height: auto; /* Allow sections to grow based on content */
-  }
-
-  /* Add margin to titles for mobile view */
-  .schoolProgram-title h2 {
-    margin-top: 60px; /* Adjust this value as needed */
+    height: auto;
   }
 
   .schoolProgram-title h2 {
-    margin-top: 100px; /* Increase margin to ensure visibility */
+    margin-top: 60px;
+  }
+
+  .schoolProgram-title h2 {
+    margin-top: 100px;
   }
 }
 
-
-
 /* Responsive Design */
 @media (min-width: 768px) {
+  html,
+  body {
+    overflow-y: auto; /* Allow vertical scrolling */
+    height: auto;
+  }
   .schoolProgram-container-one {
     flex-direction: row; /* Change to row for wider screens */
     justify-content: space-evenly;
@@ -178,4 +196,4 @@
   .ourProcess-container-one-content {
     width: 40%; /* Adjust width for larger screens */
   }
-} 
+}

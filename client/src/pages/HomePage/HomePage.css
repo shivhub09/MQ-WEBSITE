@@ -1,21 +1,37 @@
+/* Remove scrollbar */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.home-page-main-container {
+html, body {
+  height: 100%;
+  overflow: hidden; /* Disable scrollbar on the body */
 }
 
-/* Home Page Main Container */
-.home-page-main-container section {
-  display: flex;
-  flex-direction: column; /* Stack content vertically */
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  min-height: 100vh; /* Ensure section takes full height if needed */
+.home-page-main-container {
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+  overflow-y: scroll;
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For IE and Edge */
 }
+
+.home-page-main-container::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
+/* Home Page Main Container Sections */
+.home-page-main-container section {
+  scroll-snap-align: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height for each section */
+  width: 100vw;  /* Full width for each section */
+}
+
 
 /* Home Page Image */
 .homePage-container img {
@@ -34,7 +50,6 @@
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  background-color: #f7f9fc;
 }
 
 .what-we-do-container-title {
@@ -178,7 +193,6 @@
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  background-color: #f7f9fc;
 }
 
 .ourJourney-container-title {
@@ -223,10 +237,14 @@
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-  .home-page-main-container {
 
+  html, body {
+    overflow-y: auto;
+    height: auto;
+  }
+  .home-page-main-container {
     padding-top: 50px;
-    height: auto; /* Let height be determined by content */
+    height: auto; 
   }
 
   .home-page-main-container section {
@@ -234,13 +252,12 @@
     min-height: auto;
   }
 
-
   .what-we-do-container {
     height: auto; /* Adjust height for smaller screens */
     padding: 20px; /* Add padding */
   }
 
-  .ourJourney{
+  .ourJourney {
     height: auto;
   }
 
@@ -269,7 +286,7 @@
 
   .what-we-do-container-images {
     width: 100%; /* Full width */
-    
+
     flex-direction: row; /* Stack images vertically */
     align-items: center; /* Center align images */
   }
@@ -301,6 +318,4 @@
     padding: 20px; /* Add padding */
     width: 100%; /* Full width */
   }
-
-
 }

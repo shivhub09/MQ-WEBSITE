@@ -6,9 +6,7 @@ import HomePage3 from './components/images/About-Us-3.png';
 import './HomePage.css';
 import OurOfferingsCard from './components/utils/OurOfferingsCard';
 import OurJourneyCard from './components/utils/OurJourneyCard';
-import TestimonialCard from './components/utils/TestimonialCard';
 import TestimonialCarousel from './components/utils/TestimonialCarousel';
-import Footer from '../../utils/Footer/Footer';
 
 import ACEImage from './components/images/Website Home - ACE.png';
 import BrandingImage from './components/images/Website Home - Branding & Sponsorship.png';
