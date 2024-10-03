@@ -2,6 +2,7 @@ import React from 'react';
 import './ACE.css';
 import ACE2 from './Our Offerings - ACE 2.png';
 import ACE3 from './Our Offerings - ACE 3.png';
+import ACE4 from './Our Offerings - ACE 4.png';
 
 const ACE = () => {
   return (
@@ -24,7 +25,7 @@ const ACE = () => {
               <img src={ACE3} alt="ACE Activity 2" />
             </div>
             <div className="col1">
-              <img src={ACE3} alt="ACE Activity 3" />
+              <img src={ACE4} alt="ACE Activity 3" />
             </div>
           </div>
         </div>

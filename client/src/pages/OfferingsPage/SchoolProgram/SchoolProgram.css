@@ -89,13 +89,13 @@ body {
 
 /* Images */
 .container-one-image {
-  width: 100%; /* Set to full width for better responsiveness */
+  width: 90%; /* Set to full width for better responsiveness */
   display: flex;
   justify-content: center; /* Center images */
 }
 
 .container-one-image img {
-  max-width: 90%; /* Responsive image */
+  max-width: 75%; /* Responsive image */
   height: auto; /* Maintain aspect ratio */
 }
 
