@@ -1,5 +1,6 @@
 import React from 'react';
 import HomeImage from './components/images/Website Home2.jpg';
+import HomeMobileImage from './components/images/Website Home Mobile View - Copy.jpg';
 import HomePage1 from './components/images/About-Us-1.png';
 import HomePage2 from './components/images/About-Us-2.png';
 import HomePage3 from './components/images/About-Us-3.png';
@@ -18,7 +19,10 @@ const HomePage = () => {
     <div className="home-page-main-container">
       <section className="one">
         <div className="homePage-container">
-          <img src={HomeImage} alt="Home" />
+          <img src={HomeImage} alt="Home" className='home-page-image-website'/>
+        </div>
+        <div className="homePage-mobile-container">
+          <img src={HomeMobileImage} className='home-page-image-mobile' alt="" />
         </div>
       </section>
 

@@ -5,7 +5,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   overflow: hidden; /* Disable scrollbar on the body */
 }
@@ -29,9 +30,12 @@ html, body {
   justify-content: center;
   align-items: center;
   height: 100vh; /* Full height for each section */
-  width: 100vw;  /* Full width for each section */
+  width: 100vw; /* Full width for each section */
 }
 
+.homePage-mobile-container {
+  display: none;
+}
 
 /* Home Page Image */
 .homePage-container img {
@@ -39,6 +43,11 @@ html, body {
   height: 100%;
   object-fit: cover;
   display: block;
+}
+
+/* Hide mobile image by default */
+.home-page-image-mobile {
+  display: none;
 }
 
 /* What We Do Container */
@@ -237,14 +246,34 @@ html, body {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-
-  html, body {
+  html,
+  body {
     overflow-y: auto;
     height: auto;
   }
   .home-page-main-container {
     padding-top: 50px;
-    height: auto; 
+    height: auto;
+  }
+  .home-page-image-mobile {
+    display: block; /* Show mobile image */
+  }
+
+  /* .homePage-mobile-container {
+    display: block;
+  } */
+
+  .homePage-container {
+    display: none;
+  }
+
+
+  .homePage-mobile-container{
+    display: block;
+  }
+
+  .homePage-mobile-container img{
+    width: 100%;
   }
 
   .home-page-main-container section {
