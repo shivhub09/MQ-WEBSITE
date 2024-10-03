@@ -65,7 +65,7 @@ const CareerPage = () => {
     });
   }, []);
   return (
-    <div className='container'>
+    <div className='career-page-main-container'>
 
       <section className='one'>
         <div className='first'>
@@ -132,62 +132,65 @@ const CareerPage = () => {
       </section>
 
       <section className='two'>
-        <div className="content-container">
-          <div className='second2'>
-            <div className='container3'>
-              <h3 className='tt'>CONTACT US</h3>
-              <h1 className="form-title">Get In Touch</h1>
-            </div>
-            <div className='main-container'>
-              <div className='child-container'>
-                <h1>Dial In</h1>
-                <div className='details'>
-                  <a href="tel:+917506843435">+91-75068 43435</a>
-                </div>
-                <div className='details'>
-                  <a href="tel:+917738789829">+91-77387 89829</a>
-                </div>
+        <div className="contact-page-content-container">
+          <div className="content-container">
+            <div className='second2'>
+              <div className='container3'>
+                <h3 className='tt'>CONTACT US</h3>
+                <h1 className="form-title">Get In Touch</h1>
               </div>
-              <div className='child-container'>
-                <h1>Email Id</h1>
-                <div className='details'>
-                  <a href='mailto:jobs@marcosquay.com'>jobs@marcosquay.com</a>
+              <div className='main-container'>
+                <div className='child-container'>
+                  <h1>Dial In</h1>
+                  <div className='details'>
+                    <a href="tel:+917506843435">+91-75068 43435</a>
+                  </div>
+                  <div className='details'>
+                    <a href="tel:+917738789829">+91-77387 89829</a>
+                  </div>
                 </div>
-                <div className='details'>
-                  <a href='mailto:info@marcosquay.com'>info@marcosquay.com</a>
+                <div className='child-container'>
+                  <h1>Email Id</h1>
+                  <div className='details'>
+                    <a href='mailto:jobs@marcosquay.com'>jobs@marcosquay.com</a>
+                  </div>
+                  <div className='details'>
+                    <a href='mailto:info@marcosquay.com'>info@marcosquay.com</a>
+                  </div>
+                  <div className='details'>
+                    <a href='mailto:reena.sanghvi@marcosquay.com'>reena.sanghvi@marcosquay.com</a>
+                  </div>
                 </div>
-                <div className='details'>
-                  <a href='mailto:reena.sanghvi@marcosquay.com'>reena.sanghvi@marcosquay.com</a>
-                </div>
-              </div>
-              <div className='child-container'>
-                <h1>Social Media</h1>
-                <div className='details'>
-                  <FaWhatsapp />
-                  <a target="blank" href='https://api.whatsapp.com/send/?phone=7738789829'>Whatsapp</a>
-                </div>
-                <div className='details'>
-                  <FaFacebook />
-                  <a target="blank" href='https://www.facebook.com/marcosquay'>Facebook</a>
-                </div>
-                <div className='details'>
-                  <FaInstagram />
-                  <a target="blank" href='https://www.instagram.com/marcosquay/'>Instagram</a>
-                </div>
-                <div className='details'>
-                  <FaLinkedin />
-                  <a target="blank" href='https://www.linkedin.com/company/marcosquay'>LinkedIn</a>
-                </div>
-                <div className='details'>
-                  <FaYoutube />
-                  <a target="blank" href='https://www.youtube.com/channel/UCKvDIPPrvaVHjtqcr-ZYJow'>Youtube</a>
+                <div className='child-container'>
+                  <h1>Social Media</h1>
+                  <div className='details'>
+                    <FaWhatsapp />
+                    <a target="blank" href='https://api.whatsapp.com/send/?phone=7738789829'>Whatsapp</a>
+                  </div>
+                  <div className='details'>
+                    <FaFacebook />
+                    <a target="blank" href='https://www.facebook.com/marcosquay'>Facebook</a>
+                  </div>
+                  <div className='details'>
+                    <FaInstagram />
+                    <a target="blank" href='https://www.instagram.com/marcosquay/'>Instagram</a>
+                  </div>
+                  <div className='details'>
+                    <FaLinkedin />
+                    <a target="blank" href='https://www.linkedin.com/company/marcosquay'>LinkedIn</a>
+                  </div>
+                  <div className='details'>
+                    <FaYoutube />
+                    <a target="blank" href='https://www.youtube.com/channel/UCKvDIPPrvaVHjtqcr-ZYJow'>Youtube</a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div className="footer-container">
-          <Footer />
+          <div className="footer-container">
+            <Footer />
+          </div>
+
         </div>
       </section>
 
