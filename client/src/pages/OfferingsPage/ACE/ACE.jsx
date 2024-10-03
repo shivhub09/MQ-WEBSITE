@@ -9,7 +9,7 @@ const ACE = () => {
     <div className="ace-main-container">
       <section className='one'>
         <div className="ace-container-one">
-          <h2>ACE: Activities for Continued Enrichment</h2>
+          <h2>ACE: Activities for Continuous Enrichment</h2>
         </div>
 
         <div className="ace-container-one-content">

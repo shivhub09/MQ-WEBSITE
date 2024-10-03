@@ -1,30 +1,19 @@
 import React, { useEffect } from 'react';
 import './AboutUsPage.css';
+import { useNavigate } from 'react-router-dom';
 import FounderImage from './Website About Us 7.png'
 import VisionImage from './Website About Us 3.png';
 import MissionImage from './Website About Us 5.png';
 import Footer from '../../utils/Footer/Footer';
 
 const AboutUsPage = () => {
-  useEffect(() => {
-    const sections = document.querySelectorAll("section");
 
-    const options = {
-      threshold: 0.5, // Trigger when 50% of the section is visible
-    };
+  const navigate = useNavigate();
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-        }
-      });
-    }, options);
+  function handleOnClick() {
+    navigate(`/contact`);
+  }
 
-    sections.forEach(section => {
-      observer.observe(section);
-    });
-  }, []);
   return (
     <>
       <div className="about-us-main-container">
@@ -71,7 +60,7 @@ const AboutUsPage = () => {
                 <h1>Career Pathways and Leadership</h1>
                 <ul>
                   <li><b>Specialized Training </b>: Guides exceptional students towards advanced sports training at top global institutes.</li>
-                  <li><b>Industry Leadership</b> : Marcos Quay prioritizes sports and physical health for the next generation in India. Values and Impact</li>
+                  <li><b>Industry Leadership</b> : Marcos Quay prioritizes sports and physical health for the next generation in India.</li>
                   <li><b>Character Development</b> : Emphasizes skills and values like hard work, commitment, teamwork, and discipline.</li>
                   <li><b>High-Quality Education</b> : Ensures excellence for students, parents, schools, and stakeholders.</li>
                 </ul>
@@ -92,14 +81,14 @@ const AboutUsPage = () => {
               <div className="vision-container-content">
                 <h2>Vision</h2>
                 <p>Creating a robust culture of Health & Fitness in school through structured sports and physical education.</p>
-                <a href="">Get in Touch &gt;</a>
+                <a href="" onClick={handleOnClick}>Get in Touch &gt;</a>
               </div>
             </div>
             <div className="mission-container">
               <div className="mission-container-content">
                 <h2>Mission</h2>
                 <p>To align and include all our stakeholders towards the common mission – Fit School.</p>
-                <a href="">Get in Touch &gt;</a>
+                <a href="" onClick={handleOnClick}>Get in Touch &gt;</a>
               </div>
               <img src={MissionImage} alt="" />
             </div>

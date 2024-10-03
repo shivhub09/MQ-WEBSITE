@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import HomeImage from './components/images/Website Home2.jpg';
 import HomeMobileImage from './components/images/Website Home Mobile View - Copy.jpg';
 import HomePage1 from './components/images/About-Us-1.png';
@@ -15,11 +16,17 @@ import SchoolImage from './components/images/Website Home - In School.png';
 import AcademyImage from './components/images/Website Home - Sports Academy.png';
 
 const HomePage = () => {
+
+  const navigate = useNavigate();
+
+  function handleOnClick() {
+    navigate(`/contact`);
+  }
   return (
     <div className="home-page-main-container">
       <section className="one">
         <div className="homePage-container">
-          <img src={HomeImage} alt="Home" className='home-page-image-website'/>
+          <img src={HomeImage} alt="Home" className='home-page-image-website' />
         </div>
         <div className="homePage-mobile-container">
           <img src={HomeMobileImage} className='home-page-image-mobile' alt="" />
@@ -34,7 +41,7 @@ const HomePage = () => {
               <p>
                 Welcome to Marcos Quay, where we empower the next generation through comprehensive sports education. Partnering with schools, we deliver expert-led programs that enhance physical skills, teamwork, and sportsmanship. Join us in fostering a healthier, more active future for our kids.
               </p>
-              <input type="button" className='getInTouchBtn' value="Get In Touch >" />
+              <input type="button" className='getInTouchBtn' onClick={handleOnClick} value="Get In Touch >" />
             </div>
             <div className="what-we-do-container-images">
               <img src={HomePage1} alt="Description of Image" />

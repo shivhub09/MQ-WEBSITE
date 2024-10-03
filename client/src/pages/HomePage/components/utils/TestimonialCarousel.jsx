@@ -14,21 +14,21 @@ const TestimonialCarousel = () => {
     slidesToShow: 1,            // Show one slide at a time
     slidesToScroll: 1,          // Scroll one slide at a time
     autoplay: true,             // Enable autoplay
-    autoplaySpeed: 2500,        // Delay between each slide in ms
+    autoplaySpeed: 4000,        // Delay between each slide in ms
   };
 
   return (
     <div className='testimonial-main-container'>
       <section className="fifth">
         <div className="testimonal">
-          <h1 className="testimonal-container-title">Testimonial</h1>
+          <h1 className="testimonal-container-title">Testimonials</h1>
           <div className="testimonal-container-content">
             <Slider {...settings}>
 
               <TestimonialCard
                 content="Marcos Quay coaches (Irfan, Prabhu, Saif and Simran) are working in good coordination for conducting PE sessions from 23rd June 2020. I am frequently coordinating with all the coaches through online meetings and calls for arranging various workout plans for every week as per the grades. I must acknowledge all the coaches associated with 18/S for their efforts, dedication, punctuality, hard work and coordination for conducting the classes smoothly as per the requirements of the school. Students are showing interest in performing the skills taught to them and even enjoying taking part in challenging activities planned for them. Overall the planning, preparation and delivery of the PE sessions by each coach is commendable. We hope to receive the support and cooperation from MQ team in the future too."
                 name="Mr. Gaurav Desai"
-                position="Sports Coordinator | The Nahar International School- Powai, Mumbai"
+                position="Sports Coordinator | Nahar International School- Powai, Mumbai"
               />
 
               <TestimonialCard
