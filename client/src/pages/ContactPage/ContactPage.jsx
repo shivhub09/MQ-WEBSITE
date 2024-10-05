@@ -6,6 +6,11 @@ import { FaWhatsapp } from "react-icons/fa";
 import { HiOutlineMailOpen } from "react-icons/hi";
 
 const ContactPage = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to top on page load
+  }, []);
+  
   useEffect(() => {
     const sections = document.querySelectorAll("section");
     const observer = new IntersectionObserver((entries) => {

@@ -5,24 +5,19 @@ import './Navbar.css';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const navigate = useNavigate(); // Initialize the navigate hook
+  const navigate = useNavigate();
 
   const toggleDrawer = () => {
     setIsOpen(!isOpen);
   };
 
-  const toggleDropdown = () => {
-    setIsDropdownOpen(!isDropdownOpen);
+  const handleNavigate = (path) => {
+    navigate(path);
+    setIsOpen(false); // Close the navbar after navigation
   };
 
   const handleEnrollClick = () => {
     window.location.href = 'https://pay.marcosquay.com/form/index.php';
-  };
-
-  const handleNavigate = (path) => {
-    navigate(path);
-    setIsOpen(false); // Close the navbar after navigation
   };
 
   return (
@@ -32,6 +27,9 @@ const Navbar = () => {
       </div>
 
       <div className={`navbar-content ${isOpen ? 'open' : ''}`}>
+        {/* Close button */}
+        <button className="close-button" onClick={toggleDrawer}>✖</button>
+        
         <div className="list-items">
           <ul className="navbar-list">
             <li className="list-item" onClick={() => handleNavigate('/home')}>Home</li>

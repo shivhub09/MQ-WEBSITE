@@ -1,10 +1,14 @@
-import React from 'react';
+import {React, useEffect} from 'react';
 import './ACE.css';
 import ACE2 from './Our Offerings - ACE 2.png';
 import ACE3 from './Our Offerings - ACE 3.png';
 import ACE4 from './Our Offerings - ACE 4.png';
 
 const ACE = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to top on page load
+  }, []);
   return (
     <div className="ace-main-container">
       <section className='one'>

@@ -1,9 +1,11 @@
-import React from 'react';
+import {React, useEffect} from 'react';
 import './SportsAcademy.css';
 import SportsComplexImage from './Website Our Offerings - MQ Sports Academy.png';
 
 const SportsAcademy = () => {
-
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to top on page load
+  }, []);
   return (
     <div className='sportsAcademy-main-container'>
       <section className='one'>

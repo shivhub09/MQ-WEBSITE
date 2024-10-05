@@ -76,12 +76,12 @@ body {
   color: rgb(100, 100, 100);
   letter-spacing: 1px;
   text-align: justify;
-  padding: 10px; /* Add padding for better spacing */
+  padding: 10px;
 }
 
 /* List Items */
 .content-list-items {
-  padding-left: 20px; /* Add padding for list */
+  padding-left: 20px;
 }
 
 .content-list-items li {
@@ -124,7 +124,7 @@ body {
   color: rgb(100, 100, 100);
   letter-spacing: 1px;
   text-align: justify;
-  padding: 10px; /* Add padding for better spacing */
+  padding: 20px;
 }
 
 /* Choose Us */
@@ -163,14 +163,38 @@ body {
 
   .schoolProgram-main-container section {
     height: auto;
+    align-items: start;
   }
 
   .schoolProgram-title h2 {
+    font-size: 35px;
     margin-top: 60px;
+    text-align: center;
   }
 
   .schoolProgram-title h2 {
     margin-top: 100px;
+  }
+
+  .schoolProgram-subtitle {
+    margin-top: 20px;
+    text-align: start;
+  }
+  .schoolProgram-subtitle h1 {
+    text-align: start;
+    padding-left: 20px;
+  }
+
+  .foundations {
+    align-items: start;
+  }
+
+  .ourProcess-container-one-content {
+    margin-top: 20px;
+  }
+
+  .ourProcess-container-one-content h1 {
+    margin-left: 20px;
   }
 }
 
@@ -187,7 +211,7 @@ body {
   }
 
   .container-one-content {
-    width: 60%; /* Adjust width for larger screens */
+    width: 60%;
   }
 
   .container-one-image {

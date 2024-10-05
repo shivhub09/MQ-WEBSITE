@@ -3,6 +3,10 @@ import './GalleryPage.css';
 import Footer from '../../utils/Footer/Footer';
 
 const GalleryPage = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to top on page load
+  }, []);
   const [selectedImage, setSelectedImage] = useState(null);
 
   const imageColumns = [

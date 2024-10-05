@@ -8,6 +8,10 @@ import Footer from '../../utils/Footer/Footer';
 
 const AboutUsPage = () => {
 
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to top on page load
+  }, []);
+
   const navigate = useNavigate();
 
   function handleOnClick() {

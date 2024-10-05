@@ -1,4 +1,4 @@
-import React from 'react';
+import {React, useEffect} from 'react';
 import './SchoolProgram.css';
 import OurOfferingsImage1 from './Our Offerings - Smart Start 2.png';
 import OurOfferingsImage2 from './Our Offerings - Smart Start 3.png';
@@ -8,6 +8,10 @@ import WhyChooseUs from './Website Our Offerings - Why choose us.png';
 import OurProcess from './Our Process.png';
 
 const SchoolProgram = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to top on page load
+  }, []);
   return (
     <div className='schoolProgram-main-container'>
       <section className='one'>
@@ -104,12 +108,14 @@ const SchoolProgram = () => {
       <section className='three'>
         <div className="foundations">
           <div className="schoolProgram-container-one">
-            <div className="ourProcess-container-one-image">
-              <img src={OurProcess} alt="Our Process" />
-            </div>
+
             <div className="ourProcess-container-one-content">
               <h1>Our Process</h1>
               <p>At Marcos Quay, we continually advance our curriculum, training, and coaching methods. We are committed to providing a high-quality curriculum and well-trained coaches. We regularly review and adjust our curriculum to meet the needs of schools and students. Our focus on coach training ensures effective curriculum delivery, first aid, and injury prevention proficiency, and the ability to assess student performance accurately.</p>
+            </div>
+
+            <div className="ourProcess-container-one-image">
+              <img src={OurProcess} alt="Our Process" />
             </div>
           </div>
         </div>

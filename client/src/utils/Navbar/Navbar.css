@@ -1,23 +1,23 @@
-/* General Styles */
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
 
 .navbar-container {
   display: flex;
-  justify-content: space-evenly; /* For laptop view */
+  justify-content: space-evenly;
   align-items: center;
   padding: 15px 20px;
   background-color: white;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   font-family: "Poppins", system-ui;
-  position: fixed; 
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000; 
+  z-index: 1000;
 }
 
 .logo-container {
@@ -25,7 +25,7 @@ html, body {
 }
 
 .logo-container img {
-  height: 20px; 
+  height: 20px;
 }
 
 .navbar-content {
@@ -42,11 +42,6 @@ html, body {
   margin: 0;
 }
 
-.navbar-list a {
-  text-decoration: none;
-  color: black;
-}
-
 .navbar-list .list-item {
   margin: 0 15px;
   font-size: 16px;
@@ -54,7 +49,6 @@ html, body {
   cursor: pointer;
   position: relative;
 }
-
 .navbar-list .list-item a:hover {
   color: #d92128;
 }
@@ -72,7 +66,7 @@ html, body {
   padding: 10px 0;
   border-radius: 12px;
   font-family: "Poppins", system-ui;
-  padding: 10px ;
+  padding: 10px;
 }
 
 .navbar-list .list-item:hover .dropdown-content {
@@ -114,42 +108,64 @@ html, body {
   color: white;
 }
 
-/* Mobile Styles */
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: #d92128;
+  cursor: pointer;
+  display: block; /* Visible in mobile view */
+}
+
+.close-button:hover {
+  color: #ff4d4d;
+}
 @media (max-width: 768px) {
   /* Update for mobile view */
   .navbar-container {
-    justify-content: space-between; /* Align elements in mobile view */
+    justify-content: space-between;
   }
 
   .navbar-content {
     position: fixed;
-    right: 0;
+    left: 0;
     top: 0;
     height: 100%;
+    width: 100%;
     background-color: white;
     flex-direction: column;
     justify-content: center;
     padding: 20px;
     z-index: 10;
-    width: 250px;
-    transform: translateX(100%);
+    transform: translateY(100%);
     transition: transform 0.3s ease;
     overflow: hidden;
+    padding: 40px 20px; /* Add padding */
+    border-radius: 0; /* No border-radius initially */
   }
 
   .navbar-content.open {
-    transform: translateX(0);
+    transform: translateY(0);
+    border-radius: 0 0 20px 20px; /* Add border-radius when opened */
+    margin-bottom: 20px; /* Add margin to see the items below */
   }
 
   .navbar-list {
     flex-direction: column;
-    text-align: left;
+    text-align: center;
     width: 100%;
+    padding: 0;
+    margin: 0;
   }
 
   .navbar-list .list-item {
-    margin: 15px 0;
+    margin: 20px 0;
     font-size: 18px;
+    font-weight: normal; /* Change from bold to normal */
+    text-align: center;
   }
 
   .hamburger {
@@ -158,24 +174,56 @@ html, body {
     background: none;
     border: none;
     cursor: pointer;
-    position: absolute; /* Align hamburger */
-    right: 20px; /* Align to the right */
-    top: 15px;  /* Adjust top position */
+    position: absolute;
+    right: 20px;
+    top: 15px;
+  }
+
+  .close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: #d92128;
+    cursor: pointer;
+  }
+
+  .close-button:hover {
+    color: #ff4d4d;
   }
 
   .enrolNowButton {
     margin-top: 20px;
     width: 100%;
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    border-radius: 12px;
+    padding: 15px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+
+  .enrolNowButton:hover {
+    background-color: #0056b3;
   }
 
   .logo-container {
     margin-right: auto;
+    margin-left: 20px;
   }
 }
 
+/* Desktop styles */
 @media (min-width: 769px) {
   .hamburger {
     display: none;
+  }
+
+  .close-button {
+    display: none; /* Hide close button in desktop view */
   }
 
   .navbar-content {

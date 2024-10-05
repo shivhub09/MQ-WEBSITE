@@ -1,4 +1,4 @@
-import React from 'react';
+import { React, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import HomeImage from './components/images/Website Home2.jpg';
 import HomeMobileImage from './components/images/Website Home Mobile View - Copy.jpg';
@@ -16,6 +16,10 @@ import SchoolImage from './components/images/Website Home - In School.png';
 import AcademyImage from './components/images/Website Home - Sports Academy.png';
 
 const HomePage = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to top on page load
+  }, []);
 
   const navigate = useNavigate();
 

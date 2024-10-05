@@ -3,6 +3,10 @@ import './CareerPage.css';
 import { FaFacebook, FaInstagram, FaLinkedin, FaWhatsapp, FaYoutube } from 'react-icons/fa';
 import Footer from '../../utils/Footer/Footer';
 const CareerPage = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to top on page load
+  }, []);
   const [formData, setFormData] = useState({
     fullName: '',
     email: '',
