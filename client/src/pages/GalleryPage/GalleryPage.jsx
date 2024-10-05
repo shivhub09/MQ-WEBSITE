@@ -58,7 +58,7 @@ const GalleryPage = () => {
         </div>
       )}
       <Footer />
-    
+
     </div>
   );
 }

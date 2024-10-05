@@ -33,7 +33,7 @@ const AboutUsPage = () => {
 
             <div className="aboutUs-note">
               <div className="aboutUs-note-content">
-                Founded in 2012, Marcos Quay (MQ) aims to make health a habit. Based in the UK, MQ studied student health and lifestyle nationwide, identifying gaps in sports education. They designed a curriculum tailored for Indian students, addressing issues in standardization, execution, and coaching attitudes.
+                Founded in 2012, Marcos Quay aims to make health a habit. Based in the UK, Marcos Quay studied student health and lifestyle nationwide, identifying gaps in sports education. They designed a curriculum tailored for Indian students, addressing issues in standardization, execution, and coaching attitudes.
               </div>
               <div className="video-note">
                 <div className="text-row-1">
@@ -68,7 +68,7 @@ const AboutUsPage = () => {
             </div>
 
             <h3 className="aboutUs-summary">
-              MQ continues to innovate and lead in sports education, fostering a culture of health and excellence in India.
+              MarcosQuay continues to innovate and lead in sports education, fostering a culture of health and excellence in India.
             </h3>
           </div>
         </section>
@@ -111,7 +111,7 @@ const AboutUsPage = () => {
                   After multiple victories, Raahil wanted the same kind of opportunities available to more students in India. He went on to study BSc. Entrepreneurship with a minor in Corporate Communications and Finance, at Queens University - Charlotte, North Carolina, on a tennis scholarship, where he represented his university in tournaments across the USA, achieving a ranking of 12 in doubles in the NCAA tournaments.
                 </p>
                 <p>
-                  Raahil has always believed in a good balance between education and an active lifestyle, and he is working to instill this value in all the schools he collaborates with. MQ was started with his vision to make every student an active participant in their day, in society, and throughout their lives.
+                  Raahil has always believed in a good balance between education and an active lifestyle, and he is working to instill this value in all the schools he collaborates with. MarcosQuay was started with his vision to make every student an active participant in their day, in society, and throughout their lives.
                 </p>
 
                 <div className="founder-regards">
