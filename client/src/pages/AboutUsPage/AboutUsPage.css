@@ -359,7 +359,7 @@ body {
     height: auto;
   }
 
-  .aboutUs-container-title{
+  .aboutUs-container-title {
     margin-top: 0px;
   }
 
@@ -452,6 +452,10 @@ body {
     margin: 0;
   }
 
+  .mission-container {
+    flex-direction: column-reverse;
+  }
+
   .vision-container {
     margin-bottom: 1cqb;
   }
@@ -511,7 +515,7 @@ body {
     padding-left: 0;
     text-align: justify;
   }
-  .ceo-message-content h1{
+  .ceo-message-content h1 {
     text-align: center;
   }
 

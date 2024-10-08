@@ -1,4 +1,4 @@
-import {React, useEffect} from 'react';
+import { React, useEffect } from 'react';
 import './SportsAcademy.css';
 import SportsComplexImage from './Website Our Offerings - MQ Sports Academy.png';
 
