@@ -77,6 +77,11 @@ body {
 .brandSponsorship--brands-container-two-content-image img {
   width: 100%;
 }
+.brandSponsorship-container-two-content-mobile-view {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
 
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
@@ -96,13 +101,11 @@ body {
 
   .brandSponsorship-main-container section {
     height: auto;
-    /* padding: 20px 0; */
     min-height: auto;
   }
 
   .brandSponsorship-container-two-content {
     flex-direction: column;
-    /* align-items: center; */
     width: 100%;
     margin-top: 0;
     margin-bottom: 30px;
@@ -117,5 +120,28 @@ body {
   .brandSponsorship-container-two-content-image {
     width: 50%;
     margin-bottom: 20px;
+  }
+
+  .brandSponsorship--brands-container-two-content-image {
+    display: none;
+  }
+
+  /* Make sure the mobile view content is visible */
+  .brandSponsorship-container-two-content-mobile-view {
+    display: flex;
+    flex-direction: column;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .brandSponsorship-container-two-content-mobile-view{
+    padding:10px;
+    margin-top: 0;
+    width: 80%;
+  }
+
+  .brandSponsorship--brands-container-two-content-mobile-view img{
+    width: 100%;
+    object-fit: contain;
   }
 }

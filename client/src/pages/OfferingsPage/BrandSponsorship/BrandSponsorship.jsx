@@ -2,7 +2,17 @@ import React, { useEffect } from 'react';
 import './BrandSponsorship.css';
 import BrandSponsorshipImage from './Sponsorship.png';
 import OurBrands from './Website Our Offerings.png';
-
+import Bisleri from './images/Bisleri.png';
+import Cipla from './images/Cipla.png';
+import Conitnuum from './images/Conitnuum.png';
+import DaburHoney from './images/Dabur Honey.png';
+import Epigamia from './images/Epigamia Yogurt.png';
+import GOQIi from './images/GOQii.png';
+import HRX from './images/HRX.png';
+import ICICI from './images/ICICI.png';
+import Kanakia from './images/Kanakia.png';
+import Nanvati from './images/Nanvati.png';
+import Sports from './images/Sports Q.png';
 const BrandSponsorship = () => {
   useEffect(() => {
     window.scrollTo(0, 0); // Scroll to top on page load
@@ -36,6 +46,19 @@ const BrandSponsorship = () => {
           <div className="brandSponsorship--brands-container-two-content-image">
             <img src={OurBrands} alt="Brand Sponsorship" />
           </div>
+        </div>
+        <div className="brandSponsorship-container-two-content-mobile-view">
+          <img src={Bisleri} alt="Brands" />
+          <img src={Cipla} alt="Brands" />
+          <img src={Conitnuum} alt="Brands" />
+          <img src={DaburHoney} alt="Brands" />
+          <img src={Epigamia} alt="Brands" />
+          <img src={GOQIi} alt="Brands" />
+          <img src={HRX} alt="Brands" />
+          <img src={ICICI} alt="Brands" />
+          <img src={Kanakia} alt="Brands" />
+          <img src={Nanvati} alt="Brands" />
+          <img src={Sports} alt="Brands" />
         </div>
       </section>
     </div>
