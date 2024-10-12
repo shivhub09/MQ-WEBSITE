@@ -1,4 +1,4 @@
-import {React, useEffect} from 'react';
+import { React, useEffect } from 'react';
 import './SchoolProgram.css';
 import OurOfferingsImage1 from './Our Offerings - Smart Start 2.png';
 import OurOfferingsImage2 from './Our Offerings - Smart Start 3.png';
@@ -107,10 +107,10 @@ const SchoolProgram = () => {
 
       <section className='three'>
         <div className="foundations">
+          <h1>Our Process</h1>
           <div className="schoolProgram-container-one">
 
             <div className="ourProcess-container-one-content">
-              <h1>Our Process</h1>
               <p>At Marcos Quay, we continually advance our curriculum, training, and coaching methods. We are committed to providing a high-quality curriculum and well-trained coaches. We regularly review and adjust our curriculum to meet the needs of schools and students. Our focus on coach training ensures effective curriculum delivery, first aid, and injury prevention proficiency, and the ability to assess student performance accurately.</p>
             </div>
 

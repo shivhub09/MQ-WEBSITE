@@ -60,7 +60,7 @@ body {
 /* Container for each section */
 .schoolProgram-container-one {
   display: flex;
-  flex-direction: column; /* Stack elements vertically */
+  flex-direction: column-reverse; /* Stack elements vertically */
   align-items: center;
   justify-content: center;
   margin: 10px 0px;
@@ -102,13 +102,13 @@ body {
 
 /* Our Process */
 .ourProcess-container-one-image {
-  width: 100%;
+  width: 80%;
   display: flex;
   justify-content: center; /* Center image */
 }
 
 .ourProcess-container-one-image img {
-  max-width: 100%; /* Responsive image */
+  max-width: 75%; /* Responsive image */
   height: auto; /* Maintain aspect ratio */
 }
 
@@ -182,7 +182,7 @@ body {
   }
   .schoolProgram-subtitle h1 {
     text-align: start;
-    padding-left: 20px;
+    /* padding-left: 20px; */
   }
 
   .foundations {
