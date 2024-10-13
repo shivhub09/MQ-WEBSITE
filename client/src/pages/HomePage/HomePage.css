@@ -283,6 +283,11 @@ body {
     display: block; /* Show the mobile view container */
   }
 
+  .what-we-do-container-title h3 {
+    font-size: 14px; /* Adjust font size */
+    margin-bottom: 5px; /* Adjust margin */
+  }
+
   .home-page-image-mobile {
     width: 100%; /* Full width for mobile images */
     height: 100%;
@@ -330,6 +335,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 90%;
   }
 
   .ourOfferings-card-container {
@@ -339,13 +345,12 @@ body {
     gap: 0; /* Set to 0 to remove all space */
     row-gap: 5px; /* Small space between rows */
     column-gap: 5px; /* Small space between columns */
-}
+  }
 
-.ourOfferingsCard {
+  .ourOfferingsCard {
     /* Other properties */
     margin: 0; /* Remove margin to reduce spacing */
-}
-
+  }
 
   .ourJourney {
     height: 100vh; /* Full height for each section */
@@ -372,14 +377,16 @@ body {
     font-size: 12px; /* Adjust button font size */
     padding: 8px 20px;
   }
-
+  .what-we-do-container-title,
   .ourOfferings-container-title,
   .ourJourney-container-title,
   .testimonal-container-title {
     font-size: 36px; /* Adjust font size for mobile */
   }
+  .what-we-do-container-title{
+    margin: 0;
+  }
 
-  .ourOfferings-card-container,
   .ourJourney-container-content {
     flex-direction: column; /* Stack items vertically */
     align-items: center; /* Center items */
