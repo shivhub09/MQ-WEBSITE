@@ -116,11 +116,14 @@
         overflow: hidden; 
         border-bottom: 1px solid #ddd; 
         margin: 0;
+        display: hidden;
+        visibility: none;
     }
 
     .ourOfferingsCard-image img{
         object-fit: cover;
         margin: 0;
-        
+        display: hidden;
+        visibility: none;
     }
 }
