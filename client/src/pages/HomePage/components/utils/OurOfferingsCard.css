@@ -73,3 +73,54 @@
     color: #c1001d; /* Slight color change on hover */
     text-decoration: none;
 }
+
+@media (max-width: 768px) {
+    .ourOfferingsCard {
+        width: 150px; /* Further reduce the width */
+        height: 300px; /* Further reduce the height */
+        border-radius: 5px; /* Slightly reduce border radius */
+        margin: 0;
+        margin-bottom: 0;
+    }
+
+    .ourOfferingsCard {
+        /* Other properties */
+        margin: 0; /* Remove margin to reduce spacing */
+    }
+    .ourOfferingsCard-content {
+        padding: 12px 10px; /* Reduce padding further */
+    }
+
+    .ourOfferingsCard h3 {
+        font-size: 14px; /* Reduce font size */
+        margin-bottom: 5px; /* Adjust margin */
+    }
+
+    .ourOfferingsCard p {
+        font-size: 12px; /* Reduce font size */
+        margin-bottom: 10px; /* Adjust margin */
+    }
+
+    .ourOfferingsCard h4 {
+        font-size: 12px; /* Further reduce font size for link */
+        margin-top: 6px; /* Adjust margin */
+    }
+
+    .ourOfferingsCard-image {
+        height: 100px; /* Set a fixed height */
+    }
+
+    .ourOfferingsCard-image {
+        width: 100%; 
+        height: 100px; /* Set a fixed height */
+        overflow: hidden; 
+        border-bottom: 1px solid #ddd; 
+        margin: 0;
+    }
+
+    .ourOfferingsCard-image img{
+        object-fit: cover;
+        margin: 0;
+        
+    }
+}
