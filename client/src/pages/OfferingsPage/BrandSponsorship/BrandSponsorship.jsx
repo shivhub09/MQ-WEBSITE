@@ -38,7 +38,7 @@ const BrandSponsorship = () => {
       </section>
 
       <section className="one">
-        <div className="brandSponsorship-container-one">
+        <div className="brandSponsorship-container-two">
           <h1>Brands who have benefited from our partnership</h1>
         </div>
 

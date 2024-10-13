@@ -44,6 +44,15 @@ body {
   margin-bottom: 20px;
 }
 
+
+.brandSponsorship-container-two h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+
 .brandSponsorship-container-two-content {
   width: 90%;
   display: flex;
@@ -98,6 +107,10 @@ body {
     margin-top: 50px;
     font-size: 1.5rem;
   }
+  .brandSponsorship-container-two h1 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
 
   .brandSponsorship-main-container section {
     height: auto;
@@ -134,14 +147,19 @@ body {
     opacity: 1;
   }
 
-  .brandSponsorship-container-two-content-mobile-view{
-    padding:10px;
-    margin-top: 0;
-    width: 80%;
+  .brandSponsorship-container-two-content-mobile-view {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+    gap: 10px; /* Space between grid items */
+    visibility: visible;
+    opacity: 1;
+    width: 90%; /* Adjusted for mobile width */
+    margin: 0 auto; /* Centers the grid */
   }
 
-  .brandSponsorship--brands-container-two-content-mobile-view img{
-    width: 100%;
-    object-fit: contain;
+  .brandSponsorship-container-two-content-mobile-view img {
+    width: 100%; /* Make sure images take full width of their grid cell */
+    object-fit: contain; /* Ensure images fit well inside grid cells */
+    padding: 5px; /* Optional padding for image spacing */
   }
 }
