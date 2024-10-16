@@ -308,12 +308,14 @@ body {
 
   .what-we-do-container-content {
     width: 90%;
+    margin: 0;
   }
 
   .what-we-do-container-content-box {
     flex-direction: column; /* Stack the content vertically */
     align-items: center;
     height: auto; /* Allow height to adjust */
+    margin: 0;
   }
 
   .what-we-do-container-images {
@@ -324,7 +326,7 @@ body {
   .what-we-do-container-images img {
     width: 30%; /* Adjust image width */
     height: auto;
-    margin: 10px 0;
+    margin: 30px 0;
   }
 
   /* Offerings container adjustment */

@@ -63,6 +63,8 @@ body {
   flex-direction: column-reverse; /* Stack elements vertically */
   align-items: center;
   justify-content: center;
+  padding: 0;
+  margin: 0;
   margin: 10px 0px;
 }
 
@@ -169,7 +171,7 @@ body {
   .schoolProgram-title h2 {
     font-size: 35px;
     margin-top: 60px;
-    text-align: center;
+    text-align: start;
   }
 
   .schoolProgram-title h2 {
