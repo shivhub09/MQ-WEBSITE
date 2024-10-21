@@ -13,6 +13,7 @@ import ICICI from './images/ICICI.png';
 import Kanakia from './images/Kanakia.png';
 import Nanvati from './images/Nanvati.png';
 import Sports from './images/Sports Q.png';
+import Decatlon from './images/Decatlon.png';
 const BrandSponsorship = () => {
   useEffect(() => {
     window.scrollTo(0, 0); // Scroll to top on page load
@@ -59,6 +60,7 @@ const BrandSponsorship = () => {
           <img src={Kanakia} alt="Brands" />
           <img src={Nanvati} alt="Brands" />
           <img src={Sports} alt="Brands" />
+          <img src={Decatlon} alt="Brands" />
         </div>
       </section>
     </div>
