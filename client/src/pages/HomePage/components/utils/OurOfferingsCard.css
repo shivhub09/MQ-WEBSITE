@@ -1,136 +1,135 @@
 .ourOfferingsCard {
-    font-family: "Poppins", system-ui;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    width: 100%; /* Set width to 100% for flexible sizing */
-    max-width: 300px; /* Max width for larger screens */
-    height: 450px; 
-    margin: 16px 20px;
-    transition: box-shadow 0.3s ease, transform 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .ourOfferingsCard:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    transform: scale(1.05);
-  }
-  
-  .ourOfferingsCard-image {
-    width: 100%;
-    height: 175px;
-    overflow: hidden;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  .ourOfferingsCard-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .ourOfferingsCard-content {
-    padding: 24px 16px;
-    text-align: left;
-    flex-grow: 1; /* Fills the available vertical space */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
-  .ourOfferingsCard-content h3 {
-    font-size: 18px;
-    color: #333;
-    margin-bottom: 8px;
-    font-weight: 500;
-  }
-  
-  .ourOfferingsCard-content p {
-    font-size: 15px;
-    color: #666;
-    margin-bottom: 16px;
-    flex-grow: 1;
-  }
-  
-  .ourOfferingsCard-content h4 {
-    color: #d90429;
-    font-weight: 400;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    margin-top: 10px;
-    cursor: pointer;
-  }
-  
-  .ourOfferingsCard-content h4:hover {
-    color: #c1001d; /* Slight color change on hover */
-    text-decoration: none;
-  }
-  
-  /* Responsive Styles */
-  @media (max-width: 768px) {
-    .ourOfferingsCard {
+  font-family: "Poppins", system-ui;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  width: 100%; /* Set width to 100% for flexible sizing */
+  max-width: 300px; /* Max width for larger screens */
+  height: 450px; 
+  margin: 16px 20px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ourOfferingsCard:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+.ourOfferingsCard-image {
+  width: 100%;
+  height: 175px; /* Fixed height for consistency */
+  overflow: hidden;
+  border-bottom: 1px solid #ddd;
+}
+
+.ourOfferingsCard-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+.ourOfferingsCard-content {
+  padding: 24px 16px;
+  text-align: left;
+  flex-grow: 1; /* Fills the available vertical space */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ourOfferingsCard-content h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.ourOfferingsCard-content p {
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 16px;
+  flex-grow: 1;
+}
+
+.ourOfferingsCard-content h4 {
+  color: #d90429;
+  font-weight: 400;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.ourOfferingsCard-content h4:hover {
+  color: #c1001d; /* Slight color change on hover */
+  text-decoration: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .ourOfferingsCard {
       width: 100%; /* Set width to 100% for flexible sizing */
       max-width: 400px; /* Max width for medium screens */
       height: 300px; /* Auto adjust height */
       margin: 8px;
-    }
-  
-    .ourOfferingsCard-content {
+  }
+
+  .ourOfferingsCard-content {
       padding: 12px 10px; /* Reduce padding */
-    }
-  
-    .ourOfferingsCard-content h3 {
+  }
+
+  .ourOfferingsCard-content h3 {
       font-size: 14px; /* Adjust font size */
       margin-bottom: 5px; /* Adjust margin */
-    }
-  
-    .ourOfferingsCard p {
+  }
+
+  .ourOfferingsCard p {
       font-size: 12px; /* Adjust font size */
       margin-bottom: 10px; /* Adjust margin */
-    }
-  
-    .ourOfferingsCard h4 {
+  }
+
+  .ourOfferingsCard h4 {
       font-size: 12px; /* Adjust font size */
       margin-top: 6px; /* Adjust margin */
-    }
-  
-    .ourOfferingsCard-image {
-      height: 100px; /* Set height for smaller screens */
-    }
   }
-  
-  @media (max-width: 480px) {
-    .ourOfferingsCard {
+
+  .ourOfferingsCard-image {
+      height: 100px; /* Keep height consistent */
+  }
+}
+
+@media (max-width: 480px) {
+  .ourOfferingsCard {
       width: 100%; /* Maintain flexible width */
       max-width: 280px; /* Further reduce width */
       height: 250px; /* Adjust height automatically */
       margin: 4px; /* Reduce margin */
-    }
-  
-    .ourOfferingsCard-content {
-      padding: 8px; /* Further reduce padding */
-    }
-  
-    .ourOfferingsCard-content h3 {
-      font-size: 12px; /* Reduce font size */
-    }
-  
-    .ourOfferingsCard-content p {
-      font-size: 10px; /* Reduce font size */
-    }
-  
-    .ourOfferingsCard-content h4 {
-      font-size: 10px; /* Reduce font size */
-    }
-  
-    .ourOfferingsCard-image {
-      height: 80px; /* Set height for very small screens */
-    }
   }
-  
+
+  .ourOfferingsCard-content {
+      padding: 8px; /* Further reduce padding */
+  }
+
+  .ourOfferingsCard-content h3 {
+      font-size: 12px; /* Reduce font size */
+  }
+
+  .ourOfferingsCard-content p {
+      font-size: 10px; /* Reduce font size */
+  }
+
+  .ourOfferingsCard-content h4 {
+      font-size: 10px; /* Reduce font size */
+  }
+
+  .ourOfferingsCard-image {
+      height: 80px; /* Set height for very small screens */
+  }
+}
