@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import emailjs from 'emailjs-com';
 import './ContactPage.css';
 import { CiLocationOn } from "react-icons/ci";
 import { IoCallOutline } from "react-icons/io5";
@@ -41,7 +42,25 @@ const ContactPage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
+    emailjs.send(
+      'service_hnti7no',      // Replace with your EmailJS Service ID
+      'template_vepjtww',     // Replace with your EmailJS Template ID
+      formData,
+      'bsGwhwnKVyn7Tr9eJ'       // Replace with your EmailJS Public Key
+    )
+      .then((result) => {
+        alert("Message sent successfully!");
+        setFormData({
+          fullName: '',
+          email: '',
+          mobileNumber: '',
+          message: ''
+        });
+      })
+      .catch((error) => {
+        console.error("Email sending failed:", error);
+        alert("Failed to send the message. Please try again.");
+      });
   };
 
   return (
@@ -98,7 +117,7 @@ const ContactPage = () => {
         </div>
       </section>
 
-      {/* Section 2: Contact Form (Reverted to original UI) */}
+      {/* Section 2: Contact Form */}
       <section className='form-section'>
         <div className='contact-page-form-container'>
           <h1>Contact Us</h1>
@@ -155,6 +174,6 @@ const ContactPage = () => {
       </section>
     </div>
   );
-}
+};
 
 export default ContactPage;
